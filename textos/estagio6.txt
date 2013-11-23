@@ -1,0 +1,160 @@
+Absentminded;distraído
+Acronym;acrônimo
+Affair;caso
+Afford;ter recursos
+Afterwards;após
+Ant;formiga
+Appearance;aparência
+Atheist;ateu
+Avocado;abacate
+Background;fundo
+Baton;bastão
+Blind;cego
+Brand;marca
+Bridge;ponte
+Burglar;ladrão
+Cab;taxi
+Castle;castelo
+Character;personagem
+Chopper;cortador
+Clever;esperto
+Clumsy;desastrado
+Collar;colarinho
+Current;atual
+Customer;cliente
+Cutlery;talher
+Data;dados
+Dessert;sobremesa
+Development;desenvolvimento
+Disgusting;repulsivo
+Doghnut;rosquinha
+Earth;terra
+Fabric;tecido
+Fair;justo
+Feature;característica
+Fool;tolo
+Furniture;mobília
+Giggle;riso
+Gorgeus;linda
+Gossip;fofoca
+Gown;vestido de noiva
+Hammer;martelo
+Hardware;hardware
+Heel;salto
+Highlight;ponto-auge
+Hummingbird;beija-flor
+Hurricane;furacão
+Income;renda
+Inhabitant;habitante
+Insurance;seguro
+Jealous;ciumento
+Kidnapper;sequestrador
+Lamb;cordeiro
+Landscape;paisagem
+Lifeboat;bote salva-vidas
+Loan;empréstimo
+Male;macho
+Milestone;marco
+Mortage;hipoteca
+Nest;ninho
+Nosy;intrometido
+Nun;freira
+Offshore;extraterritorial
+Overnight;pela noite
+Pawn;peão
+Penny;centavo
+Pill;pílula
+Pipe;cano
+Plight;apuros
+Plot;enredo
+Poison;veneno
+Profit;lucro
+Puppet;fantoche
+Puzzle;enigma
+Recycling;reciclagem
+Research;pesquisa
+Retirement;aposentadoria
+Reward;recompensa
+Robbery;assalto
+Roommate;colega de quarto
+Rope;corda
+Savings;economias
+Scholarship;bolsa de estudos
+Sensible;sensato
+Sensitive;sensível
+Shame;vergonha
+Sin;pecado
+Spokesperson;porta-voz
+Standard;padrão
+Sticky;pegajoso
+Stingy;fedorento
+Storage;estoque
+Straw;palha
+Stubborn;teimoso
+Thumb;polegar
+Tiny;pequeno
+To annoy;perturbar
+To apologize;pedir desculpas
+To apply;aplicar
+To argue;discutir
+To bargain;pechinchar
+To dive;mergulhar
+To erode;desgastar
+To gamble;apostar
+To gather;juntar
+To guess;adivinhar
+To murder;assassinar
+To regret;arrepender
+To support;apoiar
+To vanish;desaparecer
+To wipe;limpar
+To wish;desejar
+Tough;árduo
+Trouble;problema
+Unforgettable;inesquecível
+Valuable;valioso
+Veal;vitela
+Wardrobe;guarda-roupa
+Warranty;garantia
+Weather;tempo
+Weird;estranho
+Wet;molhado
+Wheelchair;cadeira de rodas
+Amusement;divertimento
+Avocado;abacate
+Bargain;pechincha
+Blanket;cobertor
+Bright;brilhante
+Burglar;ladrão
+Deadline;prazo final
+Doughnut;rosquinha
+Earth;terra
+Jealous;com ciúmes
+Kidnapper;sequestrador
+Lamb;cordeiro
+Land;terra
+Leather;couro
+Lifeboat;barco salva-vidas
+Limb;membro
+Male;macho
+Masseuse;massagista
+Miserable;miserável
+Mud;lama
+Nun;freira
+Pawn;peão
+Penny;centavo
+Plague;praga
+Puzzle;enigma
+Sheep;ovelha
+Straw;palha
+To apologize;se desculpar
+To dive;mergulhar
+To drown;afogar
+To gamble;apostar
+Trader;comerciante
+Unforgettable;inesquecível
+Veal;vitela
+Warranty;garantia
+Wave;onda
+Western;ocidental
+Wheelchair;cadeira de rodas

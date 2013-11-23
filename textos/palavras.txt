@@ -1,0 +1,175 @@
+Activity;atividade
+Actor;ator
+Address;endereco
+Afternoon;tarde
+Again;de novo
+Amazing;maravilhoso
+Apartment;apartamento
+Bank;banco
+Bathroom;banheiro
+Beach;praia
+Beautiful;bonito
+Bed;cama
+Big;grande
+Bike;bicicleta
+Biology;biologia
+Birthday;aniversário
+Blue;azul
+Books;livros
+Boy;menino
+Brother;irmão
+Bus;ônibus
+Cake;bolo
+Camera;câmera
+Car;carro
+Cat;gato
+Celebrity;celebridade
+Cell phone;celular
+Chair;cadeira
+Chess;xadrez
+Choice;escolha
+City;cidade
+Classmate;colega
+Classroom;sala de aula
+Club;clube
+Coffee;café
+Comics;quadrinhos
+Computer;computador
+Concert;concerto
+Cookie;biscoito
+Different;diferente
+Dog;cachorro
+Drinks;bebidas
+Driver;motorista
+Drugstore;drogaria
+E-mail;e-mail
+English;inglês
+Eraser;borracha
+Family;família
+Fat;gordo
+Favorite;favorito
+Fish;peixe
+Flower;flor
+Food;comida
+Foot;pé
+Friends;amigos
+Fun;diversão
+Girl;menina
+Girlfriend;namorada
+Good;bom
+Great;ótimo
+Guitar;guitarra
+Gym;ginásio
+Hamburger;hambúrguer
+Happy;feliz
+Hello;olá
+Homework;dever de casa
+Hotel;hotel
+House;casa
+How;como
+Hungry;com fome
+Ice cream;sorvete
+Jeans;jeans
+Job;emprego
+Kitchen;cozinha
+Lamp;lâmpada
+Language;linguagem
+Left;esquerda
+Library;biblioteca
+Magazines;revistas
+Major;principal
+Mall;shopping
+Map;mapa
+Milk;leite
+Model;modelo
+Mom;mãe
+Money;dinheiro
+Monkey;macaco
+Mother;mãe
+Movie;filme
+Museum;museu
+Music;música
+Name;nome
+Nervous;nervoso
+Newspaper;jornal
+Nickname;apelido
+Night;noite
+Number;número
+Number;número
+Orange;laranja
+Page;página
+Pancake;panqueca
+Parents;pais
+Park;parque
+Partner;parceiro
+Party;festa
+Pen;caneta
+Pencil;lápis
+People;povo
+Pictures;figuras
+Pizza;pizza
+Please;por favor
+Pool;piscina
+Rain;chuva
+Ready;pronto
+Red;vermelho
+Repeat;repita
+Restaurant;restaurante
+Right;direita
+Ring;anel
+Sad;triste
+Sandwich;sanduíche
+School;escola
+Secretary;secretária
+Shower;chuveiro
+Sign;sinal
+Site;site
+Smart;esperto
+Snack;lanche
+Soccer;futebol
+Soda;refrigerante
+Sofa;sofá
+Sorry;desculpa
+Soup;sopa
+Speak;falar
+Stereo;som
+Store;loja
+Story;estória
+Street;rua
+Student;estudante
+Supermarket;supermercado
+Table;mesa
+Teacher;professor
+Television;televisão
+Tennis;tênis
+Terrible;terrível
+Thank you;obrigado
+Time;tempo
+To Understand;entender
+To buy;comprar
+To drive;dirigir
+To enjoy;curtir
+To explain;explicar
+To listen;ouvir
+To look;olhar
+To love;amar
+To place;colocar
+To read;ler
+To smile;sorrir
+To swim;nadar
+To think;pensar
+To work;trabalhar
+To write;escrever
+Tree;árvore
+Trip;viagem
+Under;debaixo
+University;universidade
+Week;semana
+Welcome;bem vindo
+What;o que
+Window;janela
+Woman;mulher
+Word;palavra
+Writer;escritor
+Yoga;ioga
+Yogurt;iogurte

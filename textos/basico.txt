@@ -1,0 +1,175 @@
+Please;por favor
+Thank you;obrigado
+Word;palavra
+Sorry;desculpa
+Speak;falar
+English;inglês
+Favorite;favorito
+Happy;feliz
+What;o que
+How;como
+Writer;escritor
+Teacher;professor
+Student;estudante
+To look;olhar
+Name;nome
+Classroom;sala de aula
+Hello;olá
+Actor;ator
+Celebrity;celebridade
+Choice;escolha
+Smart;esperto
+Major;principal
+Address;endereco
+Food;comida
+Nickname;apelido
+Birthday;aniversário
+Sign;sinal
+Partner;parceiro
+Ready;pronto
+Pizza;pizza
+Biology;biologia
+Number;número
+Great;ótimo
+Mother;mãe
+Family;família
+Big;grande
+Brother;irmão
+To drive;dirigir
+Cake;bolo
+Pictures;figuras
+People;povo
+Camera;câmera
+Cat;gato
+Dog;cachorro
+Job;emprego
+Music;música
+Concert;concerto
+Amazing;maravilhoso
+Terrible;terrível
+Coffee;café
+Books;livros
+Yoga;ioga
+Friends;amigos
+Television;televisão
+Fun;diversão
+Newspaper;jornal
+Magazines;revistas
+Night;noite
+Afternoon;tarde
+Week;semana
+To swim;nadar
+Bike;bicicleta
+Computer;computador
+Guitar;guitarra
+Car;carro
+Chess;xadrez
+Language;linguagem
+Soccer;futebol
+E-mail;e-mail
+Jeans;jeans
+Red;vermelho
+Blue;azul
+Girl;menina
+Boy;menino
+Girlfriend;namorada
+To listen;ouvir
+Cell phone;celular
+Bed;cama
+Sofa;sofá
+Lamp;lâmpada
+Chair;cadeira
+Kitchen;cozinha
+Stereo;som
+Window;janela
+Apartment;apartamento
+Right;direita
+Left;esquerda
+Time;tempo
+Table;mesa
+Under;debaixo
+To place;colocar
+Drugstore;drogaria
+Park;parque
+Store;loja
+Bank;banco
+Welcome;bem vindo
+School;escola
+University;universidade
+Map;mapa
+Street;rua
+Rain;chuva
+Pancake;panqueca
+Pool;piscina
+Beach;praia
+House;casa
+Fish;peixe
+Cookie;biscoito
+Orange;laranja
+Milk;leite
+Gym;ginásio
+To work;trabalhar
+Supermarket;supermercado
+Mall;shopping
+Library;biblioteca
+Good;bom
+Restaurant;restaurante
+Party;festa
+Trip;viagem
+Club;clube
+Homework;dever de casa
+Secretary;secretária
+Site;site
+Movie;filme
+Museum;museu
+Hotel;hotel
+Parents;pais
+Classmate;colega
+Model;modelo
+To think;pensar
+To smile;sorrir
+Drinks;bebidas
+Activity;atividade
+Soup;sopa
+Hungry;com fome
+Nervous;nervoso
+Sad;triste
+Sandwich;sanduíche
+Hamburger;hambúrguer
+Soda;refrigerante
+Monkey;macaco
+City;cidade
+Snack;lanche
+Different;diferente
+Story;estória
+Woman;mulher
+Ring;anel
+Page;página
+Number;número
+Foot;pé
+Ice cream;sorvete
+Yogurt;iogurte
+Tennis;tênis
+To love;amar
+Tree;árvore
+Flower;flor
+Again;de novo
+Repeat;repita
+To write;escrever
+To read;ler
+To enjoy;curtir
+Shower;chuveiro
+Comics;quadrinhos
+Money;dinheiro
+To buy;comprar
+Beautiful;bonito
+Fat;gordo
+Pen;caneta
+Pencil;lápis
+Eraser;borracha
+Bathroom;banheiro
+To explain;explicar
+Bus;ônibus
+Driver;motorista
+To Understand;entender
+Mom;mãe
