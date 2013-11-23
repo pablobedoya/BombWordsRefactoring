@@ -1,0 +1,16 @@
+人形;boneca
+優しい;gentil
+力;poder
+品物;produto
+将来;futuro
+小説;novela
+形;forma
+心;coracão
+熱;febre
+熱心な;dedicado
+眠い;com sono
+経験;experiência
+習慣;costumes
+説明;explicar
+通う;frequentar
+選ぶ;escolher

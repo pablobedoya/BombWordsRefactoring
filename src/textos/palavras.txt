@@ -1,0 +1,160 @@
+Absentminded;distraído
+Acronym;acrônimo
+Affair;caso
+Afford;ter recursos
+Afterwards;após
+Amusement;divertimento
+Ant;formiga
+Appearance;aparência
+Atheist;ateu
+Avocado;abacate
+Avocado;abacate
+Background;fundo
+Bargain;pechincha
+Baton;bastão
+Blanket;cobertor
+Blind;cego
+Brand;marca
+Bridge;ponte
+Bright;brilhante
+Burglar;ladrão
+Burglar;ladrão
+Cab;taxi
+Castle;castelo
+Character;personagem
+Chopper;cortador
+Clever;esperto
+Clumsy;desastrado
+Collar;colarinho
+Current;atual
+Customer;cliente
+Cutlery;talher
+Data;dados
+Deadline;prazo final
+Dessert;sobremesa
+Development;desenvolvimento
+Disgusting;repulsivo
+Doghnut;rosquinha
+Doughnut;rosquinha
+Earth;terra
+Earth;terra
+Fabric;tecido
+Fair;justo
+Feature;característica
+Fool;tolo
+Furniture;mobília
+Giggle;riso
+Gorgeus;linda
+Gossip;fofoca
+Gown;vestido de noiva
+Hammer;martelo
+Hardware;hardware
+Heel;salto
+Highlight;ponto-auge
+Hummingbird;beija-flor
+Hurricane;furacão
+Income;renda
+Inhabitant;habitante
+Insurance;seguro
+Jealous;ciumento
+Jealous;com ciúmes
+Kidnapper;sequestrador
+Kidnapper;sequestrador
+Lamb;cordeiro
+Lamb;cordeiro
+Land;terra
+Landscape;paisagem
+Leather;couro
+Lifeboat;bote salva-vidas
+Lifeboat;barco salva-vidas
+Limb;membro
+Loan;empréstimo
+Male;macho
+Male;macho
+Masseuse;massagista
+Milestone;marco
+Miserable;miserável
+Mortage;hipoteca
+Mud;lama
+Nest;ninho
+Nosy;intrometido
+Nun;freira
+Nun;freira
+Offshore;extraterritorial
+Overnight;pela noite
+Pawn;peão
+Pawn;peão
+Penny;centavo
+Penny;centavo
+Pill;pílula
+Pipe;cano
+Plague;praga
+Plight;apuros
+Plot;enredo
+Poison;veneno
+Profit;lucro
+Puppet;fantoche
+Puzzle;enigma
+Puzzle;enigma
+Recycling;reciclagem
+Research;pesquisa
+Retirement;aposentadoria
+Reward;recompensa
+Robbery;assalto
+Roommate;colega de quarto
+Rope;corda
+Savings;economias
+Scholarship;bolsa de estudos
+Sensible;sensato
+Sensitive;sensível
+Shame;vergonha
+Sheep;ovelha
+Sin;pecado
+Spokesperson;porta-voz
+Standard;padrão
+Sticky;pegajoso
+Stingy;fedorento
+Storage;estoque
+Straw;palha
+Straw;palha
+Stubborn;teimoso
+Thumb;polegar
+Tiny;pequeno
+To annoy;perturbar
+To apologize;pedir desculpas
+To apologize;se desculpar
+To apply;aplicar
+To argue;discutir
+To bargain;pechinchar
+To dive;mergulhar
+To dive;mergulhar
+To drown;afogar
+To erode;desgastar
+To gamble;apostar
+To gamble;apostar
+To gather;juntar
+To guess;adivinhar
+To murder;assassinar
+To regret;arrepender
+To support;apoiar
+To vanish;desaparecer
+To wipe;limpar
+To wish;desejar
+Tough;árduo
+Trader;comerciante
+Trouble;problema
+Unforgettable;inesquecível
+Unforgettable;inesquecível
+Valuable;valioso
+Veal;vitela
+Veal;vitela
+Wardrobe;guarda-roupa
+Warranty;garantia
+Warranty;garantia
+Wave;onda
+Weather;tempo
+Weird;estranho
+Western;ocidental
+Wet;molhado
+Wheelchair;cadeira de rodas
+Wheelchair;cadeira de rodas

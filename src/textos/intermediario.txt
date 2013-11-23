@@ -1,0 +1,139 @@
+Advice;conselho
+Airplane;avião
+Alligator;jacaré
+Alone;sozinho
+Angry;zangado
+Ankle;tornozelo
+Asthma;asma
+Balcony;balcão
+Bald;careca
+Barn;celeiro
+Bathtub;banheira
+Bear;urso
+Beer;cerveja
+Bird;pássaro
+Blender;liquidificador
+Blood;sangue
+Bookstore;livraria
+Boring;chato
+Boss;chefe
+Bottle;garrafa
+Bride;esposa
+Candle;vela
+Cap;boné
+Cartoon;desenho animado
+Cash;dinheiro
+Cathedral;catedral
+Chess;xadrez
+Childhood;infância
+Christmas;natal
+Circle;círculo
+Clouds;nuvens
+Comedy;comédia
+Company;companhia
+Country;país
+Dangerous;perigoso
+Dead;morto
+Disaster;desastre
+Dorm;dormitório
+Downtown;centro da cidade
+Dude;cara
+Eagle;águia
+Earrings;brincos
+Easter;páscoa
+Eyes;olhos
+Field;campo
+Finger;dedo
+Flea;pulga
+Flight;voo
+Flip flop;chinelo
+Foreign;estrangeiro
+Fortress;fortaleza
+Frame;moldura
+Garbage;lixo
+Gift;presente
+Glue;cola
+Gold;ouro
+Guy;cara
+Hair;cabelo
+Hairstile;penteado
+Hammock;rede
+Health;saúde
+Heaven;paraíso
+Hell;inferno
+Horn;chifre
+Island;ilha
+Jellyfish;água-viva
+Jewelry;joalheria
+Jungle;selva
+Kindergarten;jardim de infância
+Knee;joelho
+Lawyer;advogado
+Legs;pernas
+Lethal;letal
+Light;luz
+Lipstick;batom
+Little;pequeno
+Lollipop;pirulito
+Luggage;bagagem
+Mammal;mamífero
+Mansion;mansão
+Market;mercado
+Mirror;espelho
+Month;mês
+Needle;agulha
+Neighbor;vizinho
+Noise;barulho
+Ocean;oceano
+Orchestra;orquestra
+Outside;fora
+Overweight;acima do peso
+Parrot;papagaio
+Peace;paz
+Pillow;travesseiro
+Pleasant;agradável
+Popsicle;picolé
+Pyramid;pirâmide
+Rainforest;floresta tropical
+Report;relatório
+River;rio
+Shape;forma
+Shark;tubarão
+Shoulder;ombro
+Sick;doente
+Skinny;magro
+Skyscraper;arranha-céu
+Sneakers;tênis
+Stairs;escadas
+Stomach;estômago
+Stress;estresse
+Stripe;listra
+Suburb;subúrbio
+Subway;metrô
+Suit;terno
+Summer;verão
+Survey;pesquisa
+Throat;garganta
+To bite;morder
+To hide;esconder
+To improve;melhorar
+To kill;matar
+To laugh;rir
+To rest;descansar
+To share;compartilhar
+Trash;lixo
+Tunnel;túnel
+Turtle;tartaruga
+Upset;chateado
+Vacation;férias
+Vegetable;vegetal
+Village;vilarejo
+Warm;quente
+Waterfall;cachoeira
+Wedding;casamento
+Wing;asa
+Winter;inverno
+Witness;testemunha
+Wrong;errado
+Year;ano
+Zoo;zoológico

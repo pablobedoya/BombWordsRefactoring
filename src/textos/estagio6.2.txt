@@ -1,0 +1,38 @@
+Amusement;divertimento
+Avocado;abacate
+Bargain;pechincha
+Blanket;cobertor
+Bright;brilhante
+Burglar;ladrão
+Deadline;prazo final
+Doughnut;rosquinha
+Earth;terra
+Jealous;com ciúmes
+Kidnapper;sequestrador
+Lamb;cordeiro
+Land;terra
+Leather;couro
+Lifeboat;barco salva-vidas
+Limb;membro
+Male;macho
+Masseuse;massagista
+Miserable;miserável
+Mud;lama
+Nun;freira
+Pawn;peão
+Penny;centavo
+Plague;praga
+Puzzle;enigma
+Sheep;ovelha
+Straw;palha
+To apologize;se desculpar
+To dive;mergulhar
+To drown;afogar
+To gamble;apostar
+Trader;comerciante
+Unforgettable;inesquecível
+Warranty;garantia
+Wave;onda
+Western;ocidental
+Wheelchair;cadeira de rodas
+Veal;vitela

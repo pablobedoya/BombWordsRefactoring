@@ -1,0 +1,139 @@
+Sick;doente
+To share;compartilhar
+Year;ano
+Balcony;balcão
+Blender;liquidificador
+Suit;terno
+Sneakers;tênis
+Cap;boné
+Survey;pesquisa
+Eyes;olhos
+Hair;cabelo
+Skyscraper;arranha-céu
+Zoo;zoológico
+Cathedral;catedral
+Subway;metrô
+Summer;verão
+Winter;inverno
+Boring;chato
+Bookstore;livraria
+Neighbor;vizinho
+Foreign;estrangeiro
+Outside;fora
+Shark;tubarão
+Tunnel;túnel
+Field;campo
+Luggage;bagagem
+Airplane;avião
+Vacation;férias
+Flight;voo
+Lawyer;advogado
+Country;país
+Jungle;selva
+Island;ilha
+Christmas;natal
+Easter;páscoa
+Comedy;comédia
+Pleasant;agradável
+Garbage;lixo
+Rainforest;floresta tropical
+River;rio
+Waterfall;cachoeira
+Ocean;oceano
+Jellyfish;água-viva
+Dangerous;perigoso
+Bride;esposa
+Wedding;casamento
+Candle;vela
+Gift;presente
+Fortress;fortaleza
+Health;saúde
+To rest;descansar
+Hammock;rede
+Trash;lixo
+Beer;cerveja
+Bear;urso
+Advice;conselho
+To improve;melhorar
+Needle;agulha
+Stairs;escadas
+Shape;forma
+Angry;zangado
+Upset;chateado
+To kill;matar
+Stress;estresse
+Blood;sangue
+Peace;paz
+Stomach;estômago
+Asthma;asma
+Vegetable;vegetal
+Lollipop;pirulito
+Popsicle;picolé
+Alligator;jacaré
+Mammal;mamífero
+Flea;pulga
+Jewelry;joalheria
+Noise;barulho
+Market;mercado
+Lipstick;batom
+Flip flop;chinelo
+Heaven;paraíso
+Hell;inferno
+Earrings;brincos
+Downtown;centro da cidade
+Month;mês
+Little;pequeno
+Cash;dinheiro
+Alone;sozinho
+Bald;careca
+Warm;quente
+Shoulder;ombro
+Skinny;magro
+Overweight;acima do peso
+To laugh;rir
+Company;companhia
+Boss;chefe
+Guy;cara
+Dude;cara
+Hairstile;penteado
+Ankle;tornozelo
+Finger;dedo
+Throat;garganta
+Circle;círculo
+Parrot;papagaio
+Bathtub;banheira
+Knee;joelho
+Light;luz
+Report;relatório
+Wrong;errado
+Disaster;desastre
+Witness;testemunha
+Gold;ouro
+Eagle;águia
+Wing;asa
+Clouds;nuvens
+Stripe;listra
+Turtle;tartaruga
+Horn;chifre
+Legs;pernas
+Bird;pássaro
+Dead;morto
+Lethal;letal
+Bottle;garrafa
+To bite;morder
+Orchestra;orquestra
+Chess;xadrez
+Kindergarten;jardim de infância
+Childhood;infância
+To hide;esconder
+Cartoon;desenho animado
+Dorm;dormitório
+Village;vilarejo
+Mansion;mansão
+Suburb;subúrbio
+Barn;celeiro
+Pyramid;pirâmide
+Glue;cola
+Pillow;travesseiro
+Frame;moldura
+Mirror;espelho
