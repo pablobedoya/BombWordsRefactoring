@@ -17,6 +17,7 @@ public class InterfaceBomba
 	private JLabel labelPalavra;
 	private JPanel uneBombaEPalavra;
 	private boolean ativada;
+	private Sintetizador falar;
 	
 	@SuppressWarnings("static-access")
 	public InterfaceBomba(String palav, String tradu)
@@ -29,6 +30,7 @@ public class InterfaceBomba
 	    labelPalavra.setForeground(new Color(255, 201, 14));
 	    ImageIcon imagemBomba = CriadorImageIcon.criarImageIcon("imagens/bomba.png", "uma bomba");
 		labelBomba = new JLabel(imagemBomba);
+		falar = new Sintetizador();
 		
         uneBombaEPalavra = new JPanel();
 		uneBombaEPalavra.setBackground(new Color(112, 146, 190));
@@ -103,6 +105,7 @@ public class InterfaceBomba
 			this.labelPalavra.setText(getPalavra());
 			labelPalavra.setForeground(new Color(255, 201, 14));
 		}
+		falar.sayIt(getPalavra());
 		return bombaAtiva;
 	}
 	
