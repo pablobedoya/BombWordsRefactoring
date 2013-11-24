@@ -22,6 +22,8 @@
 	</properties>
 
 	<build>
+	
+	<pluginManagement>
 		<plugins>
 		
 			<plugin>
@@ -51,7 +53,12 @@
           			<version>2.16</version>
         		</plugin>
         		
-        		<plugin>
+		</plugins>
+		
+	<pluginManagement>
+		
+		<plugins>
+                        <plugin>
                                 <artifactId>maven-compiler-plugin</artifactId>
                                 <version>3.0</version>
                                 <configuration>
@@ -61,6 +68,6 @@
                                         <testTarget>1.7</testTarget>
                                 </configuration>
                         </plugin>
-		</plugins>
+                </plugins>
 	</build>
 </project>
