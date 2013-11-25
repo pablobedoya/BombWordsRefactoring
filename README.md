@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.org/bedoya/BombWordsRefactoring.png?branch=master)](https://travis-ci.org/bedoya/BombWordsRefactoring)
-
-
+[![Build Status](https://travis-ci.org/bedoya/BombWordsRefactoring.png?branch=master)](https://travis-ci.org/bedoya/BombWordsRefactoring) [![Coverage Status](https://coveralls.io/repos/bedoya/BombWordsRefactoring/badge.png)](https://coveralls.io/r/bedoya/BombWordsRefactoring)
 
 BombWordsRefactoring
 ====================
