@@ -27,7 +27,6 @@
         <outputDirectory>target</outputDirectory>
         <testSourceDirectory>test</testSourceDirectory>
         <testOutputDirectory>target/test-classes</testOutputDirectory>
-        <defaultGoal>install</defaultGoal>
         
                 <plugins>
                 
