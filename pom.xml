@@ -24,9 +24,6 @@
         <build>
         
         <sourceDirectory>src</sourceDirectory>
-        <outputDirectory>target</outputDirectory>
-        <testSourceDirectory>test</testSourceDirectory>
-        <testOutputDirectory>target/test-classes</testOutputDirectory>
         
                 <plugins>
                 
