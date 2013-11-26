@@ -3,12 +3,13 @@ package test;
 
 import java.util.LinkedList;
 
-import jogo.InterfaceBomba;
-import jogo.InterfaceJogo;
-import jogo.Jogador;
-import jogo.TelaInicial;
-import jogo.ThreadAtivaBomba;
-import fachadaparadao.FachadaDAO;
+import main.java.fachadaparadao.FachadaDAO;
+import main.java.jogo.InterfaceBomba;
+import main.java.jogo.InterfaceJogo;
+import main.java.jogo.Jogador;
+import main.java.jogo.TelaInicial;
+import main.java.jogo.ThreadAtivaBomba;
+
 
 public class MainTest 
 {
