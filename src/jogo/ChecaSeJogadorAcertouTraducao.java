@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 public class ChecaSeJogadorAcertouTraducao 
 {
-	//classe só é chamada quando a InterfaceJogo precisa saber quais bombas desativar
+	//classe sao chamada quando a InterfaceJogo precisa saber quais bombas desativar
 	
 	private InterfaceBomba[] imagensBombas;
 	
@@ -15,8 +15,8 @@ public class ChecaSeJogadorAcertouTraducao
 	
 	public LinkedList<InterfaceBomba> quaisBombasDevemSerDesativadas(String palpiteJogador)
 	{
-		/*checa se o palpite do jogador é igual a alguma tradução de uma das imagensBombas
-		  e retorna somente quais bombas devem ser desativadas(jogador acertou a tradução)*/
+		/*checa se o palpite do jogador eh igual a alguma traducao de uma das imagensBombas
+		  e retorna somente quais bombas devem ser desativadas(jogador acertou a traducao)*/
 		
 		LinkedList<InterfaceBomba> bombasARemover = new LinkedList<InterfaceBomba>();
 		palpiteJogador = palpiteJogador.toLowerCase();

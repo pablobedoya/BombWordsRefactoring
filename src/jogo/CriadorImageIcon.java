@@ -14,7 +14,7 @@ public class CriadorImageIcon//cria ImageIcons para usar nas interfaces do jogo
 		
 		else
 		{
-			System.out.println("imagem não encontrada:" + endereco);
+			System.out.println("imagem nao encontrada:" + endereco);
 			return null;
 		}
 	}

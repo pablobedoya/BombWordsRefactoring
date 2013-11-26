@@ -8,6 +8,7 @@ public class ConcreteCommandAdicionarPalavraNaLista implements CommandAdicionarP
 	private String traducaoPalavraAdicionar;
 	private String nomeDaListaAdicionarPalavra;
 	
+	
 	public ConcreteCommandAdicionarPalavraNaLista(String palavraAdd, String traducaoAdd, String nomeLista)
 	{
 		this.palavraAdicionar = palavraAdd;
@@ -15,10 +16,12 @@ public class ConcreteCommandAdicionarPalavraNaLista implements CommandAdicionarP
 		this.nomeDaListaAdicionarPalavra = nomeLista;
 	}
 	
+	
 	public String getPalavraAdicionar()
 	{
 		return this.palavraAdicionar;
 	}
+	
 	
 	public boolean adicionarPalavraNaLista()
 	{
@@ -28,6 +31,7 @@ public class ConcreteCommandAdicionarPalavraNaLista implements CommandAdicionarP
 		
 		return conseguiuAdicionarPalavraNaLista;
 	}
+	
 	
 	public void desfazerAdicionarPalavraNaLista()
 	{

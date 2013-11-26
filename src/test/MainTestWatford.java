@@ -1,4 +1,4 @@
-package testes;
+package test;
 
 
 import java.util.LinkedList;
@@ -14,7 +14,7 @@ public class MainTestWatford
 {
 	public static void setarNomeListaASerUsadaNoJogo()
 	{
-		FachadaDAO.getFachadaDAO().mudarListaASerUsadaNoJogo("palavras");//a versão do atford só trabalha com a lista de palavras chamada "palavras";
+		FachadaDAO.getFachadaDAO().mudarListaASerUsadaNoJogo("palavras");//a versï¿½o do atford sï¿½ trabalha com a lista de palavras chamada "palavras";
 	}
 	public static void main(String args[])
 	{

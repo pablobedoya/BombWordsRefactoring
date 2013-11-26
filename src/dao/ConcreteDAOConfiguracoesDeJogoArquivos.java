@@ -51,8 +51,8 @@ public class ConcreteDAOConfiguracoesDeJogoArquivos  implements DAOConfiguracoes
 			FileOutputStream escreve = new FileOutputStream("textos/configuracoes.txt");
 			OutputStreamWriter filtroEscreve = new OutputStreamWriter(escreve, "UTF8");
 			
-			filtroEscreve.write("segundos até inserir novas bombas:" + tempoParaSetarBomba + "\r\n");
-			filtroEscreve.write("segundos até uma bomba explodir:" + tempoParaBombaExplodir + "\r\n");
+			filtroEscreve.write("segundos ate inserir novas bombas:" + tempoParaSetarBomba + "\r\n");
+			filtroEscreve.write("segundos ate uma bomba explodir:" + tempoParaBombaExplodir + "\r\n");
 			
 			filtroEscreve.flush();
 			filtroEscreve.close();
