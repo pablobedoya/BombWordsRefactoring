@@ -68,6 +68,10 @@
                          <plugin>
                                 <artifactId>maven-compiler-plugin</artifactId>
                                 <version>3.0</version>
+                                	<source>1.7</source>
+					<target>1.7</target>
+					<testSource>1.7</testSource>
+					<testTarget>1.7</testTarget>
                         </plugin>
                 </plugins>
         </build>
