@@ -23,6 +23,9 @@
         <build>
         
                 <sourceDirectory>src</sourceDirectory>
+		<outputDirectory>target</outputDirectory>
+		<testSourceDirectory>src/test</testSourceDirectory>
+		<defaultGoal>install</defaultGoal>
         
                 <plugins>
                 
@@ -37,6 +40,15 @@
                                         <aggregate>true</aggregate>
                                 </configuration>
                         </plugin>
+                        
+                                <groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>2.12</version>
+					<configuration>
+						<argLine>-XX:-UseSplitVerifier</argLine>					
+				</configuration>
+			</plugin>
+                        
                         
                         <plugin>
                                 <groupId>org.eluder.coveralls</groupId>
