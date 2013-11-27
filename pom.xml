@@ -23,9 +23,6 @@
 
 	<build>
 		<sourceDirectory>src</sourceDirectory>
-		<outputDirectory>target</outputDirectory>
-		<testSourceDirectory>src/test</testSourceDirectory>
-		<defaultGoal>install</defaultGoal>
 
 		<pluginManagement>
 			<plugins>
