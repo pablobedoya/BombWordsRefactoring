@@ -84,7 +84,7 @@ public class InterfaceEditarListasJogo implements ActionListener
 		
 		
 		//criar botao editarPalavras
-		editarPalavrasDasListas = new JButton("adicionar/remover palavras em listas já criadas");
+		editarPalavrasDasListas = new JButton("adicionar/remover palavras em listas jï¿½ criadas");
 		editarPalavrasDasListas.addActionListener(this);
 		editarPalavrasDasListas.setForeground(new Color(202, 0, 0));
 		grid.gridx = 0;
@@ -124,7 +124,7 @@ public class InterfaceEditarListasJogo implements ActionListener
 	public void limparListaPalavras(String nomeLista)
 	{
 		Object[] options = {"Limpar",
-        "Não Limpar"};
+        "Nao Limpar"};
 		int escolha = JOptionPane.showOptionDialog(null,
 				"Limpar a lista vai apagar todas as palavras inclusas na lista. Tem certeza?",
 				"Limpar lista",
@@ -143,7 +143,7 @@ public class InterfaceEditarListasJogo implements ActionListener
 			else
 			{
 				
-				JOptionPane.showMessageDialog(null, "não foi possível limpar essa lista:" + nomeLista);
+				JOptionPane.showMessageDialog(null, "nao foi possivel limpar essa lista:" + nomeLista);
 			}
 		}
 		
@@ -229,7 +229,7 @@ public class InterfaceEditarListasJogo implements ActionListener
 		if(arg0.getSource() == this.criarNovaLista)
 		{
 			String nomeNovaLista = 
-					JOptionPane.showInputDialog("Qual o nome da nova lista? Não precisa de .txt", "listaQualquer");
+					JOptionPane.showInputDialog("Qual o nome da nova lista? Nao precisa de .txt", "listaQualquer");
 			if(nomeNovaLista != null)
 			{
 				if(nomeNovaLista.compareTo("") != 0)
@@ -243,7 +243,7 @@ public class InterfaceEditarListasJogo implements ActionListener
 					}
 					else
 					{
-						JOptionPane.showMessageDialog(null, "lamento, mas a lista não pode ser criada:" + nomeNovaLista);
+						JOptionPane.showMessageDialog(null, "lamento, mas a lista nao pode ser criada:" + nomeNovaLista);
 					}
 				}
 				else
@@ -270,11 +270,11 @@ public class InterfaceEditarListasJogo implements ActionListener
 				{
 					if(tiraTxt[0].compareTo("palavras") == 0)
 					{
-						JOptionPane.showMessageDialog(null, "você não pode deletar esta lista: palavras");
+						JOptionPane.showMessageDialog(null, "voce nao pode deletar esta lista: palavras");
 					}
 					else
 					{
-						JOptionPane.showMessageDialog(null, "lamento, mas a lista não existe:" + tiraTxt[0]);
+						JOptionPane.showMessageDialog(null, "lamento, mas a lista nao existe:" + tiraTxt[0]);
 					}
 				}
 			}

@@ -92,6 +92,4 @@ public class Jogador
 		FachadaDAO.getFachadaDAO().inserirJogadorRanking(this.nome, this.placar);
 		this.verRanking(bombasQueOJogadorExplodiu);
 	}
-	
-
 }

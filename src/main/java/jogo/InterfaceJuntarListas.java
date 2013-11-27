@@ -101,7 +101,7 @@ public class InterfaceJuntarListas implements ActionListener, KeyListener
 		uneTudo.add(juntarListas, grid);
 		
 		//agora uma breve informacao sobre qual lista junta com qual
-		JLabel informacao = new JLabel("obs: ao juntar as listas, a lista1 terá suas palavras antigas + as palavras da lista2");
+		JLabel informacao = new JLabel("obs: ao juntar as listas, a lista1 tera suas palavras antigas + as palavras da lista2");
 		informacao.setFont(new Font("Serif", Font.BOLD, 20));
 		informacao.setForeground(new Color(255, 201, 14));
 		JPanel painelInformacao = new JPanel();
@@ -141,11 +141,11 @@ public class InterfaceJuntarListas implements ActionListener, KeyListener
 		}
 		else if(FachadaDAO.getFachadaDAO().listaDePalavrasJahExiste(lista1) == false)
 		{
-			JOptionPane.showMessageDialog(null, "a lista1 não existe");
+			JOptionPane.showMessageDialog(null, "a lista1 nao existe");
 		}
 		else if(FachadaDAO.getFachadaDAO().listaDePalavrasJahExiste(lista2) == false)
 		{
-			JOptionPane.showMessageDialog(null, "a lista2 não existe");
+			JOptionPane.showMessageDialog(null, "a lista2 nao existe");
 		}
 		else
 		{

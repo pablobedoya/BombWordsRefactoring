@@ -1,8 +1,6 @@
 package test;
 
-
 import java.util.LinkedList;
-
 import main.java.fachadaparadao.FachadaDAO;
 import main.java.jogo.InterfaceBomba;
 import main.java.jogo.InterfaceJogo;
@@ -13,10 +11,13 @@ import main.java.jogo.ThreadAtivaBomba;
 
 public class MainTestWatford
 {
+	
 	public static void setarNomeListaASerUsadaNoJogo()
 	{
 		FachadaDAO.getFachadaDAO().mudarListaASerUsadaNoJogo("palavras");//a vers�o do atford s� trabalha com a lista de palavras chamada "palavras";
 	}
+	
+	
 	public static void main(String args[])
 	{
 		setarNomeListaASerUsadaNoJogo();

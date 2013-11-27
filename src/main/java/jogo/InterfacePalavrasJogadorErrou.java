@@ -68,7 +68,7 @@ public class InterfacePalavrasJogadorErrou
 			
 			//falta colocar a traducao associada
 			String traducao = bombasQueOJogadorExplodiu.get(i).getTraducao();
-			JLabel linhaPalavrasErradas2 = new JLabel("tradução : " + traducao);
+			JLabel linhaPalavrasErradas2 = new JLabel("traducao : " + traducao);
 			linhaPalavrasErradas2.setFont(new Font("Serif", Font.BOLD, 20));
 			linhaPalavrasErradas2.setForeground(Color.white);
 			JPanel painelLinha2 = new JPanel();
@@ -121,7 +121,7 @@ public class InterfacePalavrasJogadorErrou
 			InterfaceBomba bomba = bombasQueOJogadorExplodiu.get(i);
 			linha = "palavra: " + bomba.getPalavra();
 			this.escrever(linha);
-			linha = "tradução: " + bomba.getTraducao();
+			linha = "traducao: " + bomba.getTraducao();
 			this.escrever(linha);
 			this.escrever("");
 		}
@@ -133,8 +133,8 @@ public class InterfacePalavrasJogadorErrou
 		bombas.add(new InterfaceBomba("hi", "oi"));
 		bombas.add(new InterfaceBomba("goodbye", "tchau"));
 		bombas.add(new InterfaceBomba("excellent", "excelente"));
-		bombas.add(new InterfaceBomba("that is a good question", "é uma boa pergunta"));
-		bombas.add(new InterfaceBomba("music", "música"));
+		bombas.add(new InterfaceBomba("that is a good question", "e uma boa pergunta"));
+		bombas.add(new InterfaceBomba("music", "musica"));
 		
 		InterfacePalavrasJogadorErrou inter = new InterfacePalavrasJogadorErrou(bombas);
 		inter.criarTelaInterfacePalavrasJogadorErrou();

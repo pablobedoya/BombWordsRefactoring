@@ -37,8 +37,8 @@ public class InterfaceJogo implements KeyListener
 	private PalavrasETraducoes palavrasETraducoesDoJogo;
 	private JLabel[] labelsPalavrasNaoAcertadas;
 	private JLabel[] labelsTraducoesPalavrasNaoAcertadas;
-	private int quantasBombasJaExplodiram; //útil para alterar a tabela que mostra as palavras erradas por um jogador
-	private volatile boolean jogoAcabou; //booleano alterado quando jframe é disposed()
+	private int quantasBombasJaExplodiram; //ï¿½til para alterar a tabela que mostra as palavras erradas por um jogador
+	private volatile boolean jogoAcabou; //booleano alterado quando jframe ï¿½ disposed()
 	
 	
 	private  InterfaceJogo()
@@ -142,7 +142,7 @@ public class InterfaceJogo implements KeyListener
 		coracoesJogador[2] = labelCoracao3;
 		coracoesJogador[3] = labelCoracao4;
 		coracoesJogador[4] = labelCoracao5;
-		//Criar uma label para dizer que as vidas são do jogador
+		//Criar uma label para dizer que as vidas sï¿½o do jogador
 		JLabel vidas = new JLabel("Vidas:");
 		vidas.setFont(new Font("Serif", Font.BOLD, 20));
 		vidas.setForeground(new Color(255, 201, 14));
@@ -164,7 +164,7 @@ public class InterfaceJogo implements KeyListener
 	
 	public JPanel criarPontuacao()
 	{
-		JLabel frasePontuacao = new JLabel("Pontuação:");
+		JLabel frasePontuacao = new JLabel("Pontuacao:");
 		frasePontuacao.setFont(new Font("Serif", Font.BOLD, 20));
 		frasePontuacao.setForeground(new Color(255, 201, 14));
 		
@@ -380,7 +380,7 @@ public class InterfaceJogo implements KeyListener
 	public synchronized void inserirPalavraETraducaoDaBombaQueExplodiu(InterfaceBomba interBomba)
 	{
 		this.labelsPalavrasNaoAcertadas[quantasBombasJaExplodiram].setText("Palavra : " + interBomba.getPalavra());
-		this.labelsTraducoesPalavrasNaoAcertadas[quantasBombasJaExplodiram].setText("Tradução : " + interBomba.getTraducao());
+		this.labelsTraducoesPalavrasNaoAcertadas[quantasBombasJaExplodiram].setText("Traducao : " + interBomba.getTraducao());
 		quantasBombasJaExplodiram = quantasBombasJaExplodiram + 1;
 	}
 	

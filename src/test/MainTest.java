@@ -1,8 +1,6 @@
 package test;
 
-
 import java.util.LinkedList;
-
 import main.java.fachadaparadao.FachadaDAO;
 import main.java.jogo.InterfaceBomba;
 import main.java.jogo.InterfaceJogo;
@@ -14,13 +12,12 @@ import main.java.jogo.ThreadAtivaBomba;
 public class MainTest 
 {
 	
-	
 	public static void main(String args[])
 	{
 		TelaInicial telaInicial = new TelaInicial();
 		telaInicial.criarTelaInicial();
-		
 		String nomeJogador = telaInicial.getNomeJogador();
+
 		while(nomeJogador == null)
 		{
 			try {
@@ -33,7 +30,6 @@ public class MainTest
 		}
 		
 		
-
 		InterfaceJogo interfaceDoJogo = InterfaceJogo.getInterfaceJogo();
 		interfaceDoJogo.criarInterfaceJogo();
 		

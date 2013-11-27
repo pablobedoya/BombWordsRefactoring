@@ -51,7 +51,7 @@ public class InterfaceListaPalavras implements ActionListener, KeyListener, Mous
 	{
 		janelaLista = new JFrame();
 		janelaLista.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		janelaLista.setTitle("listagem de palavras e traduções");
+		janelaLista.setTitle("listagem de palavras e traducoes");
 		
 		comandosRemoverPalavrasDaLista = new LinkedList<CommandRemoverPalavrasDaLista>();
 		
@@ -153,7 +153,7 @@ public class InterfaceListaPalavras implements ActionListener, KeyListener, Mous
 	{
 		if(this.listaAtualEstahVazia() == true)
 		{
-			JOptionPane.showMessageDialog(null, "esta lista está vazia e portanto não pode ser usada no jogo");
+			JOptionPane.showMessageDialog(null, "esta lista esta vazia e portanto nao pode ser usada no jogo");
 		}
 		else
 		{
@@ -238,13 +238,13 @@ public class InterfaceListaPalavras implements ActionListener, KeyListener, Mous
 		}
 		catch(NoSuchElementException exc)
 		{
-			JOptionPane.showMessageDialog(null, "nenhuma palavra já foi removida da lista");
+			JOptionPane.showMessageDialog(null, "nenhuma palavra ja foi removida da lista");
 		}
 	}
 	
 	public void criarInterfaceListaPalavras()
 	{
-		JLabel legendaListaAtual = new JLabel("Lista:");//só para o usuario ter nocÃ£o do que Ã© a label lista atual
+		JLabel legendaListaAtual = new JLabel("Lista:");//so para o usuario ter nocÃ£o do que Ã© a label lista atual
 		legendaListaAtual.setBackground(new Color(112, 146, 190));
 		legendaListaAtual.setForeground(Color.WHITE);
 		legendaListaAtual.setFont(new Font("Serif", Font.BOLD, 20));
@@ -261,7 +261,7 @@ public class InterfaceListaPalavras implements ActionListener, KeyListener, Mous
 		//adicionar uma legenda
 		JLabel labelLegenda = new JLabel();
 		labelLegenda.setFont(new Font("Serif", Font.BOLD, 20));
-		labelLegenda.setText("<html><font color='white'>Formato:</font><font color = #8bf2f8>Palavra;Tradução</font></html>");
+		labelLegenda.setText("<html><font color='white'>Formato:</font><font color = #8bf2f8>Palavra;Traduï¿½ï¿½o</font></html>");
 		
 		JPanel painelTitulo = new JPanel();
 		GridBagLayout layoutTitulo = new GridBagLayout();
@@ -322,7 +322,7 @@ public class InterfaceListaPalavras implements ActionListener, KeyListener, Mous
 		botaoInserirPalavrasNaLista.addActionListener(this);
 		botaoInserirPalavrasNaLista.addKeyListener(this);
 		
-		botaoDesfazerRemocaoPalavrasDaLista = new JButton("desfazer remoção de palavras");
+		botaoDesfazerRemocaoPalavrasDaLista = new JButton("desfazer remocao de palavras");
 		botaoDesfazerRemocaoPalavrasDaLista.addActionListener(this);
 		botaoDesfazerRemocaoPalavrasDaLista.addKeyListener(this);
 		
@@ -331,7 +331,7 @@ public class InterfaceListaPalavras implements ActionListener, KeyListener, Mous
 		String [] listaNomeListas = this.pegarNomesListasPalavras();
 		if(listaNomeListas == null)
 		{
-			System.out.println("lista com nomes das listas de palavras está vazia");
+			System.out.println("lista com nomes das listas de palavras esta vazia");
 			listaNomeListas = new String[1];
 			listaNomeListas[0] = "";
 		}
@@ -400,7 +400,7 @@ public class InterfaceListaPalavras implements ActionListener, KeyListener, Mous
 		return FachadaDAO.getFachadaDAO().pegarNomeListaASerUsadaNoJogo();
 	}
 	
-	public void criarInterfaceListaPalavrasTeste()//sï¿½ para testes
+	public void criarInterfaceListaPalavrasTeste()//so para testes
 	{	this.listaAtual = new JLabel("palavras");
 		JScrollPane painelPalavras = this.criarScrollPaneListagemPalavras();
 		janelaLista.add(painelPalavras);
@@ -453,7 +453,7 @@ public class InterfaceListaPalavras implements ActionListener, KeyListener, Mous
 		int key = e.getKeyCode();
         if(key == 40)
         {
-        	//se o usuï¿½rio apertar a tecla da seta para baixo no teclado
+        	//se o usuario apertar a tecla da seta para baixo no teclado
         	if(botaoAtualizar.isFocusOwner() == true)
         	{
         		this.botaoUsarListaNoJogo.requestFocus();
@@ -481,7 +481,7 @@ public class InterfaceListaPalavras implements ActionListener, KeyListener, Mous
         }
         else if(key == 38)
         {
-        	//se o usuï¿½rio apertar a tecla da seta para cima no teclado
+        	//se o usuario apertar a tecla da seta para cima no teclado
         	if(botaoAtualizar.isFocusOwner() == true)
         	{
         		this.botaoDesfazerRemocaoPalavrasDaLista.requestFocus();
@@ -616,9 +616,7 @@ public class InterfaceListaPalavras implements ActionListener, KeyListener, Mous
 				labelPalavraSelecionada.setForeground(new Color(139,242,248));
 			}
 		}
-		
 	}
-
 
 
 	@Override
@@ -627,13 +625,9 @@ public class InterfaceListaPalavras implements ActionListener, KeyListener, Mous
 		
 	}
 
-
-
 	@Override
 	public void mouseReleased(MouseEvent e) {
 		// TODO Auto-generated method stub
 		
 	}
-	
-
 }

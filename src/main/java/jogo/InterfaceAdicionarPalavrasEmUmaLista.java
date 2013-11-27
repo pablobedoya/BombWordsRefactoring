@@ -66,7 +66,7 @@ public class InterfaceAdicionarPalavrasEmUmaLista implements ActionListener, Key
 		unePalavraETextField.add(textFieldPalavra);
 		
 		textFieldTraducao = new JTextField("", 25);
-		JLabel labelTraducao = new JLabel("Tradução:");
+		JLabel labelTraducao = new JLabel("Traducao:");
 		labelTraducao.setFont(new Font("Serif", Font.BOLD, 20));
 		labelTraducao.setForeground(new Color(255, 201, 14));
 		JPanel uneTraducaoETextField = new JPanel();
@@ -118,7 +118,7 @@ public class InterfaceAdicionarPalavrasEmUmaLista implements ActionListener, Key
 		grid.gridheight = 1;
 		uneTudo.add(salvar, grid);
 		
-		this.botaoDesfazerAdicaoPalavra = new JButton("desfazer adição de nova palavra");
+		this.botaoDesfazerAdicaoPalavra = new JButton("desfazer adicao de nova palavra");
 		botaoDesfazerAdicaoPalavra.addActionListener(this);
 		grid.gridx = 0;
 		grid.gridy = 4;
@@ -136,7 +136,7 @@ public class InterfaceAdicionarPalavrasEmUmaLista implements ActionListener, Key
 		
 		
 		//um texto, desta vez alertando que o usuario pode usar setas
-		JLabel labelInformativa1 = new JLabel("você pode transitar por este menu usando as setas do teclado");
+		JLabel labelInformativa1 = new JLabel("voce pode transitar por este menu usando as setas do teclado");
 		labelInformativa1.setFont(new Font("Serif", Font.BOLD, 18));
 		labelInformativa1.setForeground(new Color(255, 201, 14));
 		grid.gridx = 0;
@@ -146,7 +146,7 @@ public class InterfaceAdicionarPalavrasEmUmaLista implements ActionListener, Key
 		
 		
 		
-		JLabel labelInformativa2 = new JLabel("caso você já informe uma palavra e uma tradução,");
+		JLabel labelInformativa2 = new JLabel("caso voce ja informe uma palavra e uma traducao,");
 		labelInformativa2.setFont(new Font("Serif", Font.BOLD, 18));
 		labelInformativa2.setForeground(Color.WHITE);
 		grid.gridx = 0;
@@ -166,7 +166,6 @@ public class InterfaceAdicionarPalavrasEmUmaLista implements ActionListener, Key
 	    textFieldPalavra.addKeyListener(this);
 	    textFieldTraducao.addKeyListener(this);
 		salvar.addKeyListener(this);
-		
 		
 		janelaEditarLista.add(uneTudo);
 		janelaEditarLista.pack();
@@ -249,7 +248,7 @@ public class InterfaceAdicionarPalavrasEmUmaLista implements ActionListener, Key
 		}
 		catch(NoSuchElementException exc)
 		{
-			JOptionPane.showMessageDialog(null, "nenhuma palavra nova já foi adicionada na lista");
+			JOptionPane.showMessageDialog(null, "nenhuma palavra nova ja foi adicionada na lista");
 		}
 	}
 	
@@ -262,7 +261,7 @@ public class InterfaceAdicionarPalavrasEmUmaLista implements ActionListener, Key
 		
 		if(novaPalavra.compareTo("") == 0 || novaTraducao.compareTo("") == 0)
 		{
-			JOptionPane.showMessageDialog(null, "precisa ser informado uma palavra e uma tradução");
+			JOptionPane.showMessageDialog(null, "precisa ser informado uma palavra e uma traducao");
 		}
 		else if(palavraTemLetrasRomanas(novaPalavra) == true && novaPalavra.length() > 25)
 		{

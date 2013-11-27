@@ -14,7 +14,7 @@ public class ThreadFazBombaExplodir extends Thread
 	PalavrasETraducoes palavrasETraducoesDoJogo;
 	private int quantasPalavrasNoJogo;
 	LinkedList<InterfaceBomba> bombasExplodidasPeloJogador; 
-	//lista de bombas que o jogador j· conseguiu explodir(ele n√£o acertou a traduc√£o a tempo)
+	//lista de bombas que o jogador jÔøΩ conseguiu explodir(ele n√£o acertou a traduc√£o a tempo)
 	
 	public ThreadFazBombaExplodir(InterfaceBomba bomb, int quantasPalavrasJogo,
 			PalavrasETraducoes palavrasETraducoes, int tempoAteBombaExplodir, LinkedList<InterfaceBomba> bombasExplodidas)
@@ -114,7 +114,7 @@ public class ThreadFazBombaExplodir extends Thread
 	@SuppressWarnings("deprecation")
 	public void desativarBomba()
 	{
-		//gerar nova palavra e traduÁ„o para a nova Bomba.
+		//gerar nova palavra e traducao para a nova Bomba.
 		Random geraAleatorio = new Random();
 		int numAleatorio = geraAleatorio.nextInt(quantasPalavrasNoJogo);
 		String novaPalavra = this.palavrasETraducoesDoJogo.getPalavra(numAleatorio);
@@ -137,7 +137,4 @@ public class ThreadFazBombaExplodir extends Thread
 		
 		this.stop();
 	}
-	
-	
-
 }

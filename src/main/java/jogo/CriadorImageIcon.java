@@ -18,5 +18,4 @@ public class CriadorImageIcon//cria ImageIcons para usar nas interfaces do jogo
 			return null;
 		}
 	}
-
 }

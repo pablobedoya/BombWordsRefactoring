@@ -30,7 +30,7 @@ import main.java.fachadaparadao.FachadaDAO;
 
 public class TelaInicialComNiveis implements ActionListener, ItemListener
 {
-	//a tela inicial com opcões de escolher o estágio do curso de inglês e o nível difícil,médio ou fácil
+	//a tela inicial com opcï¿½es de escolher o estï¿½gio do curso de inglï¿½s e o nï¿½vel difï¿½cil,mï¿½dio ou fï¿½cil
 	private String nomeJogador;
 	JButton botaoJogar;
 	JTextField textFieldNomeJogador;
@@ -143,23 +143,23 @@ public class TelaInicialComNiveis implements ActionListener, ItemListener
 		tituloRegras.setFont(new Font("Serif", Font.BOLD, 25));
 		tituloRegras.setForeground(new Color(255, 201, 14));
 		
-		JLabel regra0 = new JLabel("1 - Aparecerão algumas bombas na tela com palavras em cima delas");
+		JLabel regra0 = new JLabel("1 - Aparecerao algumas bombas na tela com palavras em cima delas");
 		regra0.setFont(new Font("Serif", Font.BOLD, 23));
 		regra0.setForeground(new Color(255, 201, 14));
 		
-		JLabel regra1 = new JLabel("2 - Digite a tradução para as palavras que aparecem em cima das bombas e aperte enter");
+		JLabel regra1 = new JLabel("2 - Digite a traducao para as palavras que aparecem em cima das bombas e aperte enter");
 		regra1.setFont(new Font("Serif", Font.BOLD, 23));
 		regra1.setForeground(new Color(255, 201, 14));
 		
-		JLabel regra2 = new JLabel("3 - Se você acertou a tradução, a bomba é desativada e você ganha 100 pontos");
+		JLabel regra2 = new JLabel("3 - Se voce acertou a traducao, a bomba eh desativada e voce ganha 100 pontos");
 		regra2.setFont(new Font("Serif", Font.BOLD, 23));
 		regra2.setForeground(new Color(255, 201, 14));
 		
-		JLabel regra3 = new JLabel("4 - Se o contador de uma bomba chega no zero, você perde uma vida");
+		JLabel regra3 = new JLabel("4 - Se o contador de uma bomba chega no zero, voce perde uma vida");
 		regra3.setFont(new Font("Serif", Font.BOLD, 23));
 		regra3.setForeground(new Color(255, 201, 14));
 		
-		JLabel regra4 = new JLabel("5 - Se você perder 5 vidas, é fim de jogo");
+		JLabel regra4 = new JLabel("5 - Se voce perder 5 vidas, eh fim de jogo");
 		regra4.setFont(new Font("Serif", Font.BOLD, 23));
 		regra4.setForeground(new Color(255, 201, 14));
 
@@ -241,7 +241,7 @@ public class TelaInicialComNiveis implements ActionListener, ItemListener
 		painelCheckBoxes.setLayout(gridLayout);
 		GridBagConstraints grid = new GridBagConstraints();
 		
-		JLabel titulo = new JLabel("O jogo deve ter palavras dos estágios:");
+		JLabel titulo = new JLabel("O jogo deve ter palavras dos estagios:");
 		titulo.setFont(new Font("Serif", Font.BOLD, 20));
 		titulo.setForeground(new Color(255, 201, 14));
 		JPanel painelTitulo = new JPanel();
@@ -257,9 +257,9 @@ public class TelaInicialComNiveis implements ActionListener, ItemListener
 		
 		
 		LinkedList<JCheckBox> listaCheckBox = new LinkedList<JCheckBox>();
-		basico = new JCheckBox("básico");
-		intermediario = new JCheckBox("intermediário");
-		avancado = new JCheckBox("avançado");
+		basico = new JCheckBox("bï¿½sico");
+		intermediario = new JCheckBox("intermediï¿½rio");
+		avancado = new JCheckBox("avanï¿½ado");
 		
 		
 		listaCheckBox.add(basico);
@@ -289,9 +289,9 @@ public class TelaInicialComNiveis implements ActionListener, ItemListener
 	
 	private JPanel criarPainelNivelDoJogo()
 	{
-		facil = new JRadioButton("fácil (20 segundos para uma bomba explodir)");
-		medio = new JRadioButton("médio (15 segundos para uma bomba explodir)");
-		dificil = new JRadioButton("difícil (10 segundos para uma bomba explodir)");
+		facil = new JRadioButton("fï¿½cil (20 segundos para uma bomba explodir)");
+		medio = new JRadioButton("mï¿½dio (15 segundos para uma bomba explodir)");
+		dificil = new JRadioButton("difï¿½cil (10 segundos para uma bomba explodir)");
 		intenso = new JRadioButton("intenso (5 segundos para uma bomba explodir e muito mais bombas aparecem na tela)");
 		
 		facil.setForeground(new Color(255, 201, 14));
@@ -330,7 +330,7 @@ public class TelaInicialComNiveis implements ActionListener, ItemListener
 		GridBagConstraints grid = new GridBagConstraints();
 		
 		
-		JLabel titulo = new JLabel("Nível de dificuldade:");
+		JLabel titulo = new JLabel("Nï¿½vel de dificuldade:");
 		titulo.setFont(new Font("Serif", Font.BOLD, 20));
 		titulo.setForeground(new Color(255, 201, 14));
 		JPanel painelTitulo = new JPanel();
@@ -389,7 +389,7 @@ public class TelaInicialComNiveis implements ActionListener, ItemListener
 	
 	public void definirUmaNovaListaDePalavrasPrincipal()
 	{
-		//assim que o jogador clica jogar, a lista "palavras" que é a principal muda de acordo com o que foi selecionado nas Jcheckboxes
+		//assim que o jogador clica jogar, a lista "palavras" que ï¿½ a principal muda de acordo com o que foi selecionado nas Jcheckboxes
 		
 		//primeiro vamos limpar a lista "palavras" atual
 		
@@ -473,8 +473,4 @@ public class TelaInicialComNiveis implements ActionListener, ItemListener
 			}
 		}
 	}
-	
-	
-	
-
 }

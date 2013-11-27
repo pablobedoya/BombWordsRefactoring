@@ -61,6 +61,7 @@ public class InterfaceBomba
 	{
 		return traducao;
 	}
+	
 	public synchronized void setTraducao(String nova)
 	{
 		this.traducao = nova;
