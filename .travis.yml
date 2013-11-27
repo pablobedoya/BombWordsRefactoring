@@ -4,13 +4,6 @@ jdk:
   - openjdk7
   
 script:
-  mvn install -DskipTests=true
-
-# mvn cobertura:cobertura coveralls:cobertura
-
   
-after_success:
-  - mvn clean cobertura:cobertura coveralls:cobertura
-
-#after_success:
-#- mvn clean cobertura:cobertura org.eluder.coveralls:coveralls-maven-plugin:cobertura
+  - mvn install -DskipTests=false
+  - mvn -e  test cobertura:cobertura coveralls:cobertura
