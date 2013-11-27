@@ -1,12 +1,13 @@
 language: java
 jdk:
   - oraclejdk7
-  - openjdk7
+  #- openjdk7
   
 script:
+  mvn clean install
   - mvn install -DskipTests=false
-  
   - mvn -e  test cobertura:cobertura coveralls:cobertura
 
-after_success:
-  - mvn clean cobertura:cobertura coveralls:cobertura
+after_success: clean cobertura:cobertura org.eluder.coveralls:coveralls-maven-plugin:cobertura
+  
+  #- mvn clean cobertura:cobertura coveralls:cobertura
