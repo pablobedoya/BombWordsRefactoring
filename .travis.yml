@@ -4,7 +4,8 @@ jdk:
   #- openjdk7
   
 script:
-  mvn clean install
+
+  - mvn clean install
   - mvn install -DskipTests=false
   - mvn -e  test cobertura:cobertura coveralls:cobertura
 
