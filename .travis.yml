@@ -9,5 +9,5 @@ script:
 
 
 after_success: 
-  - mvn -e  test cobertura:cobertura coveralls:cobertura  
+  - mvn clean cobertura:cobertura coveralls:cobertura  
   #- mvn clean cobertura:cobertura coveralls:cobertura
