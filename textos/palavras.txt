@@ -173,3 +173,4 @@ Word;palavra
 Writer;escritor
 Yoga;ioga
 Yogurt;iogurte
+Vasco da Gama;Maior do Mundo

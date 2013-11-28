@@ -27,12 +27,12 @@ public class TestFachadaDAO {
 	public void testSetarNovasConfiguracoesJogo() {
 		
 	}
-*/
+
 	@Test
 	public void testCriarNovaListaPalavras() {
 		assertTrue(FachadaDAO.getFachadaDAO().criarNovaListaPalavras("novaLista"));
 	}
-
+*/
 	@Test
 	public void testRemoverListaPalavras() {
 		assertFalse(FachadaDAO.getFachadaDAO().removerListaPalavras("naoExiste"));
@@ -47,12 +47,12 @@ public class TestFachadaDAO {
 	public void testExtrairNomesDeTodasAsListasDePalavras() {
 
 	}
-*/
+
 	@Test
 	public void testListaDePalavrasJahExiste() {
-		assertTrue(FachadaDAO.getFachadaDAO().listaDePalavrasJahExiste("novaLista"));
+		assertFalse(FachadaDAO.getFachadaDAO().listaDePalavrasJahExiste("novaLista"));
 	}
-/*
+
 	@Test
 	public void testMudarListaASerUsadaNoJogo() {
 		

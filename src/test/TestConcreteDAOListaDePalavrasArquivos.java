@@ -20,17 +20,17 @@ public class TestConcreteDAOListaDePalavrasArquivos {
 		
 	}
 
-	@Test
+	/*	@Test
 	public void testCriarNovaListaPalavras() {
 		String nomeLista = "arquivo";
 		assertTrue(lista.criarNovaListaPalavras(nomeLista));
 	}
 	
-	/*@Test
+	@Test
 	public void testCriarNovaListaPalavrasJaexiste() {
 		String nomeLista = "arquivo";
 		assertFalse(lista.criarNovaListaPalavras(nomeLista));
-	}*/
+	}
 
 	@Test
 	public void testRemoverListaPalavras() {
@@ -44,7 +44,7 @@ public class TestConcreteDAOListaDePalavrasArquivos {
 		assertFalse(lista.limparListaPalavras(nomeLista));
 	}
 
-	/*
+
 	@Test
 	public void testExtrairNomesDeTodasAsListasDePalavras() {
 		
