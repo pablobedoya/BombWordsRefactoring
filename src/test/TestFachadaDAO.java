@@ -24,12 +24,15 @@ public class TestFachadaDAO {
 
 	@Test
 	public void testLerConfiguracoesJogo() {
-		
+		String[] esperado = {"10", "20"};
+		assertArrayEquals("Sucesso", esperado, FachadaDAO.getFachadaDAO().lerConfiguracoesJogo());
 	}
 
 	@Test
 	public void testSetarNovasConfiguracoesJogo() {
-		
+		String[] esperado = {"10", "20"};
+		FachadaDAO.getFachadaDAO().setarNovasConfiguracoesJogo(10, 20);
+		assertArrayEquals("Sucesso", esperado, FachadaDAO.getFachadaDAO().lerConfiguracoesJogo());
 	}
 
 	@Test
@@ -88,7 +91,9 @@ public class TestFachadaDAO {
 
 	@Test
 	public void testInserirJogadorRanking() {
-		
+		FachadaDAO.getFachadaDAO().inserirJogadorRanking("Ezequely", 10);
+		String[] esperado = {"phi;4300;5;9", "j;2300;10;20", "pi;800;10;20", "phi;600;5;5", "Phi;600;5;5", "Josiel;400;10;20", "pablo;400;10;20", "Ezequely;10;10;20"};
+		assertArrayEquals("Sucesso", esperado, FachadaDAO.getFachadaDAO().lerRanking());
 	}
 
 	@Test
