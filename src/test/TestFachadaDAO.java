@@ -12,7 +12,7 @@ public class TestFachadaDAO {
 	@Before
 	public void setUp() throws Exception {
 	}
-
+/*
 	@Test
 	public void testGetFachadaDAO() {
 		assertNotNull(FachadaDAO.getFachadaDAO());
@@ -27,7 +27,7 @@ public class TestFachadaDAO {
 	public void testSetarNovasConfiguracoesJogo() {
 		
 	}
-
+*/
 	@Test
 	public void testCriarNovaListaPalavras() {
 		assertTrue(FachadaDAO.getFachadaDAO().criarNovaListaPalavras("novaLista"));
@@ -42,17 +42,17 @@ public class TestFachadaDAO {
 	public void testLimparListaPalavras() {
 		assertTrue(FachadaDAO.getFachadaDAO().limparListaPalavras("novaLista"));
 	}
-
+/*
 	@Test
 	public void testExtrairNomesDeTodasAsListasDePalavras() {
 
 	}
-
+*/
 	@Test
 	public void testListaDePalavrasJahExiste() {
 		assertTrue(FachadaDAO.getFachadaDAO().listaDePalavrasJahExiste("novaLista"));
 	}
-
+/*
 	@Test
 	public void testMudarListaASerUsadaNoJogo() {
 		
@@ -67,12 +67,12 @@ public class TestFachadaDAO {
 	public void testExtrairPalavrasETraducoes() {
 		
 	}
-
+*/
 	@Test
 	public void testAdicionarNovaPalavraNaLista() {
 		FachadaDAO.getFachadaDAO().adicionarNovaPalavraNaLista("novaLista", "Vasco da Gama", "Maior do Mundo");
 	}
-
+/*
 	@Test
 	public void testRemoverPalavraDaLista() {
 		
@@ -87,5 +87,5 @@ public class TestFachadaDAO {
 	public void testLerRanking() {
 		
 	}
-
+*/
 }
