@@ -11,7 +11,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-public class ConcreteDAOPalavrasDeListaArquivosTest {
+public class TestConcreteDAOPalavrasDeListaArquivos {
 
 	private ConcreteDAOPalavrasDeListaArquivos plv = new ConcreteDAOPalavrasDeListaArquivos();
 

@@ -10,10 +10,11 @@ import main.java.dao.ConcreteDAOListaDePalavrasArquivos;
 import org.junit.Before;
 import org.junit.Test;
 
-public class ConcreteDAOListaDePalavrasArquivosTest {
+public class TestConcreteDAOListaDePalavrasArquivos {
 
 	private ConcreteDAOListaDePalavrasArquivos lista = new ConcreteDAOListaDePalavrasArquivos();
-	
+
+
 	@Before
 	public void setUp() throws Exception {
 		
@@ -43,11 +44,12 @@ public class ConcreteDAOListaDePalavrasArquivosTest {
 		assertFalse(lista.limparListaPalavras(nomeLista));
 	}
 
+	/*
 	@Test
 	public void testExtrairNomesDeTodasAsListasDePalavras() {
 		
 	}
-
+*/
 	@Test
 	public void testListaDePalavrasJahExiste() {
 		String nomeLista = "listaQualquer";
@@ -59,10 +61,10 @@ public class ConcreteDAOListaDePalavrasArquivosTest {
 		String nomeLista = "arquivo";
 		assertTrue(lista.mudarListaASerUsadaNoJogo(nomeLista));
 	}
-
+/*
 	@Test
 	public void testPegarNomeListaASerUsadaNoJogo() {
 		
 	}
-
+*/
 }

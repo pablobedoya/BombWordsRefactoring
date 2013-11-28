@@ -6,7 +6,7 @@ import main.java.jogo.JuntaListasDePalavras;
 import org.junit.Before;
 import org.junit.Test;
 
-public class JuntaListasDePalavrasTest {
+public class TestJuntaListasDePalavras {
 
 	private JuntaListasDePalavras junta;
 	
