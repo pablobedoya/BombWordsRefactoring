@@ -37,12 +37,12 @@ public class TestFachadaDAO {
 	public void testRemoverListaPalavras() {
 		assertFalse(FachadaDAO.getFachadaDAO().removerListaPalavras("naoExiste"));
 	}
-
+	/*
 	@Test
 	public void testLimparListaPalavras() {
 		assertTrue(FachadaDAO.getFachadaDAO().limparListaPalavras("novaLista"));
 	}
-/*
+
 	@Test
 	public void testExtrairNomesDeTodasAsListasDePalavras() {
 
