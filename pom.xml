@@ -8,6 +8,10 @@
 	<version>1.0</version>
 
 <build>
+	<sourceDirectory>src</sourceDirectory>
+        <testSourceDirectory>src/test</testSourceDirectory>
+        <defaultGoal>install</defaultGoal> 
+        
         <plugins>
           <plugin>
            <groupId>org.eluder.coveralls</groupId>
