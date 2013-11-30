@@ -2,9 +2,17 @@ package test;
 
 import static org.junit.Assert.*;
 
+import java.awt.Dimension;
+import java.util.LinkedList;
+
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 
+import main.java.command.CommandRemoverPalavrasDaLista;
 import main.java.jogo.InterfaceListaPalavras;
 
 import org.junit.Before;
@@ -12,6 +20,21 @@ import org.junit.Test;
 
 public class TestInterfaceListaPalavras {
 
+	private JLabel listaAtual;
+	private JLabel listaUsadaNoJogo;
+	private JFrame janelaLista;
+	private JButton botaoAtualizar;
+	private JButton botaoUsarListaNoJogo;
+	private JButton botaojuntarListas;
+	private JButton botaoRemoverPalavrasSelecionadas;
+	private JButton botaoInserirPalavrasNaLista;
+	private JButton botaoDesfazerRemocaoPalavrasDaLista;
+	private JScrollPane scrollPainelPalavras;
+	private JComboBox caixaSelecionarListas;//caixa para selecionar listas.
+	private LinkedList<JLabel> labelsPalavrasLista;//conjunto de labels com palavras da lista visualizada.
+	private LinkedList<Boolean> palavrasEstaoSelecionadasNaLista;/*cada booleano dessa lista corresponde a uma palavra da lista visualizada. 
+																	O booleano indica se a palavra foi selecionada pelo usuario.*/
+	private LinkedList<CommandRemoverPalavrasDaLista> comandosRemoverPalavrasDaLista;//para possibilitar refazer
 	private InterfaceListaPalavras intLista = new InterfaceListaPalavras();
 	
 	@Before
@@ -33,20 +56,22 @@ public class TestInterfaceListaPalavras {
 
 	@Test
 	public void testCriarScrollPaneListagemPalavras() {
-		assertTrue(true);
-	}
-
-/*	@Test
-	public void testCriarPainelListagemPalavras() {
-		JPanel panel = new JPanel();
-		assertNotEquals(panel, intLista.criarPainelListagemPalavras("novaLista11"));
+		JScrollPane scrollPainelPalavras;
+		String listaAtual = "palavras";
+		JPanel painelPalavras = intLista.criarPainelListagemPalavras(listaAtual);
+		
+		scrollPainelPalavras = new JScrollPane(painelPalavras);
+		Dimension d = new Dimension(400, 400);
+		scrollPainelPalavras.setPreferredSize(d);
+		assertNotNull(scrollPainelPalavras);
 	}
 
 	@Test
 	public void testMostrarOutraListaPalavras() {
-		
+				
+		//intLista.mostrarOutraListaPalavras("outraLista");
 	}
-*/
+
 	@Test
 	public void testMostrarPalavrasJogo() {
 		assertTrue(true);
@@ -54,12 +79,12 @@ public class TestInterfaceListaPalavras {
 
 	@Test
 	public void testPegarNomesListasPalavras() {
-		assertTrue(true);
+		String[] listaTest = intLista.pegarNomesListasPalavras();
 	}
 
 	@Test
 	public void testJogarComListaVisualizada() {
-		assertTrue(true);
+		//intLista.jogarComListaVisualizada();
 	}
 
 	@Test
@@ -79,7 +104,7 @@ public class TestInterfaceListaPalavras {
 
 	@Test
 	public void testCriarInterfaceListaPalavras() {
-		assertTrue(true);
+		intLista.criarInterfaceListaPalavrasTeste();
 	}
 
 	@Test
@@ -89,7 +114,7 @@ public class TestInterfaceListaPalavras {
 
 	@Test
 	public void testCriarInterfaceListaPalavrasTeste() {
-		assertTrue(true);
+		intLista.criarInterfaceListaPalavrasTeste();
 	}
 
 	@Test
