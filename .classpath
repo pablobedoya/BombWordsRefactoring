@@ -6,19 +6,29 @@
                         <attribute name="maven.pomderived" value="true"/>
                 </attributes>
         </classpathentry>
-        <classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+        <classpathentry excluding="**" kind="src" output="target/classes" path="src/main/java/command">
                 <attributes>
                         <attribute name="maven.pomderived" value="true"/>
                 </attributes>
         </classpathentry>
-        <classpathentry kind="src" output="target/test-classes" path="src/test/java">
+        <classpathentry excluding="**" kind="src" output="target/classes" path="src/main/java/dao">
+                <attributes>
+                        <attribute name="maven.pomderived" value="true"/>
+                </attributes>
+        </classpathentry>
+        <classpathentry excluding="**" kind="src" output="target/classes" path="src/main/java/fachadaparadao">
+                <attributes>
+                        <attribute name="maven.pomderived" value="true"/>
+                </attributes>
+        </classpathentry>
+        <classpathentry excluding="**" kind="src" output="target/classes" path="src/main/java/jogo">
+                <attributes>
+                        <attribute name="maven.pomderived" value="true"/>
+                </attributes>
+        </classpathentry>
+        <classpathentry kind="src" output="target/test-classes" path="src/test">
                 <attributes>
                         <attribute name="optional" value="true"/>
-                        <attribute name="maven.pomderived" value="true"/>
-                </attributes>
-        </classpathentry>
-        <classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
-                <attributes>
                         <attribute name="maven.pomderived" value="true"/>
                 </attributes>
         </classpathentry>
@@ -32,8 +42,6 @@
                         <attribute name="maven.pomderived" value="true"/>
                 </attributes>
         </classpathentry>
-        <classpathentry kind="lib" path="src/main/resources/jcalendar-1.4.jar"/>
-        <classpathentry kind="lib" path="src/main/resources/mysql-connector-java-5.1.6.jar"/>
         <classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
         <classpathentry kind="lib" path="//PHI-PC/Users/Public/Documents/coveralls-maven-plugin-1.2.0.jar"/>
         <classpathentry kind="output" path="target/classes"/>
