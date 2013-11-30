@@ -7,6 +7,7 @@ import org.junit.Test;
 
 public class TestConcreteDAORankingArquivos {
 	
+	
 	ConcreteDAORankingArquivos c = new ConcreteDAORankingArquivos();
 	
 	@Test
