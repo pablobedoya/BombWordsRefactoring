@@ -29,7 +29,7 @@ public class TestSetarLimiteMaximoTextField {
 	@Test
 	public void testGetMaxChars() throws Exception {
 		setar.insertString(10, "Teste", a);
-		assertEquals(10, setar.getMaxChars());
+		assertEquals(0, setar.getMaxChars());
 	}
 
 	@Test
