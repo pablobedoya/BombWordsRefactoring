@@ -5,8 +5,5 @@ jdk:
   
 script: 
   - mvn install -DskipTests=false
-  - mvn -e  test cobertura:cobertura coveralls:cobertura
-
-
-  #- mvn clean cobertura:cobertura coveralls:cobertura  
+  - mvn clean cobertura:cobertura coveralls:cobertura  
   #- mvn clean cobertura:cobertura coveralls:cobertura
