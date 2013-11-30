@@ -29,10 +29,10 @@ public class TestTelaInicial {
 		tela.criarTelaInicial();
 		assertNotNull(tela);
 	}
-
+/*
 	@Test
 	public void testActionPerformed() {
 		
 	}
-
+*/
 }

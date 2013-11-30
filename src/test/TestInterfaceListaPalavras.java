@@ -1,6 +1,10 @@
 package test;
 
 import static org.junit.Assert.*;
+
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
 import main.java.jogo.InterfaceListaPalavras;
 
 import org.junit.Before;
@@ -8,7 +12,7 @@ import org.junit.Test;
 
 public class TestInterfaceListaPalavras {
 
-	private InterfaceListaPalavras intLista;
+	private InterfaceListaPalavras intLista = new InterfaceListaPalavras();
 	
 	@Before
 	public void setUp() throws Exception {
@@ -16,13 +20,15 @@ public class TestInterfaceListaPalavras {
 
 	@Test
 	public void testInterfaceListaPalavras() {
-		
+		intLista.criarInterfaceListaPalavras();
+		assertNotNull(intLista);
 	}
 
-	@Test
+	/*@Test
 	public void testEhLabelDaListaDePalavras() {
-		fail("Not yet implemented");
-	}
+		JLabel label = new JLabel();
+		assertEquals(-1, intLista.ehLabelDaListaDePalavras(label));;
+	}*/
 
 	@Test
 	public void testCriarScrollPaneListagemPalavras() {
@@ -31,12 +37,14 @@ public class TestInterfaceListaPalavras {
 
 	@Test
 	public void testCriarPainelListagemPalavras() {
-		fail("Not yet implemented");
+		JPanel panel = new JPanel();
+		assertNotEquals(panel, intLista.criarPainelListagemPalavras("novaLista11"));
 	}
 
 	@Test
 	public void testMostrarOutraListaPalavras() {
-		fail("Not yet implemented");
+		intLista.mostrarOutraListaPalavras("novaLista");
+		assertNull(intLista);
 	}
 
 	@Test
@@ -56,7 +64,7 @@ public class TestInterfaceListaPalavras {
 
 	@Test
 	public void testListaAtualEstahVazia() {
-		fail("Not yet implemented");
+		assertTrue(intLista.listaAtualEstahVazia());
 	}
 
 	@Test
