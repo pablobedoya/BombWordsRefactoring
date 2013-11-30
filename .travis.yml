@@ -3,11 +3,10 @@ jdk:
   - oraclejdk7
   #- openjdk7
   
-script:
-
+script: 
   - mvn install -DskipTests=false
+  - mvn -e  test cobertura:cobertura coveralls:cobertura
 
 
-after_success: 
-  - mvn clean cobertura:cobertura coveralls:cobertura  
+  #- mvn clean cobertura:cobertura coveralls:cobertura  
   #- mvn clean cobertura:cobertura coveralls:cobertura
