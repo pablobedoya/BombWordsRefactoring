@@ -165,6 +165,7 @@ Trip;viagem
 Under;debaixo
 University;universidade
 Vasco da Gama;Maior do Mundo
+Vasco da Gama;Maior do Mundo
 Week;semana
 Welcome;bem vindo
 What;o que

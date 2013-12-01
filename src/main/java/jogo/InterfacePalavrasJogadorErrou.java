@@ -127,6 +127,7 @@ public class InterfacePalavrasJogadorErrou
 		}
 	}
 	
+	
 	public static void main(String args[])
 	{
 		LinkedList<InterfaceBomba> bombas = new LinkedList<InterfaceBomba>();

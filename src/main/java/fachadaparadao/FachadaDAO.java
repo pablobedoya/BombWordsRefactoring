@@ -107,9 +107,4 @@ public class FachadaDAO
 	{
 		return this.acessaRanking.lerRanking();
 	}
-
-	
-	
-	
-
 }

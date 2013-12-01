@@ -5,4 +5,4 @@ phi;600;5;5
 Phi;600;5;5
 Josiel;400;10;20
 pablo;400;10;20
-sem nome;0;0;0
+Ezequely;10;10;20
