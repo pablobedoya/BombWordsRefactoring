@@ -2,11 +2,13 @@ package test;
 
 import static org.junit.Assert.*;
 
+import java.util.LinkedList;
 import java.util.Random;
 
 import main.java.dao.ConcreteDAOPalavrasDeListaArquivos;
 import main.java.dao.DAOListaDePalavras;
 import main.java.fachadaparadao.FachadaDAO;
+import main.java.jogo.PalavrasETraducoes;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -47,12 +49,12 @@ public class TestFachadaDAO {
 	public void testRemoverListaPalavras() {
 		assertFalse(FachadaDAO.getFachadaDAO().removerListaPalavras("naoExiste"));
 	}
-/*	
+
 	@Test
 	public void testLimparListaPalavras() {
-		assertTrue(FachadaDAO.getFachadaDAO().limparListaPalavras("limparLista"));
+		assertTrue(FachadaDAO.getFachadaDAO().limparListaPalavras("novaLista24"));
 	}
-*/
+
 	@Test
 	public void testExtrairNomesDeTodasAsListasDePalavras() {
 
@@ -76,7 +78,14 @@ public class TestFachadaDAO {
 
 	@Test
 	public void testExtrairPalavrasETraducoes() {
-		
+		LinkedList<String> palavras = new LinkedList<>();
+		palavras.add("Activity");
+		palavras.add("Actor");
+		LinkedList<String> traducoes = new LinkedList<>();
+		traducoes.add("Atividade");
+		traducoes.add("Ator");
+		PalavrasETraducoes palavrasETraducoes = new PalavrasETraducoes(palavras, traducoes);
+		PalavrasETraducoes saida = FachadaDAO.getFachadaDAO().extrairPalavrasETraducoes("novaLista15");
 	}
 
 	@Test
@@ -86,7 +95,7 @@ public class TestFachadaDAO {
 
 	@Test
 	public void testRemoverPalavraDaLista() {
-		
+	FachadaDAO.getFachadaDAO().removerPalavraDaLista("palavras", "Maior do Mundo");
 	}
 
 	@Test
@@ -98,7 +107,7 @@ public class TestFachadaDAO {
 
 	@Test
 	public void testLerRanking() {
-		
+		FachadaDAO.getFachadaDAO().lerRanking();
 	}
 
 }
