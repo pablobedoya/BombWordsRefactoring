@@ -12,16 +12,16 @@ public class TestConcreteCommandAdicionarPalavraNaLista {
 
 	@Before
 	public void setUp() {
-		fixture = new ConcreteCommandAdicionarPalavraNaLista("", "", "");
+		fixture = new ConcreteCommandAdicionarPalavraNaLista("dog", "cachorro", "palavras");
 	}
 
-	@Test(expected = Exception.class)
+	@Test
 	public void testAdicionarPalavraNaLista() throws Exception {
 		boolean result = fixture.adicionarPalavraNaLista();
 		assertTrue(result);
 	}
 
-	@Test(expected = Exception.class)
+	@Test
 	public void testDesfazerAdicionarPalavraNaLista() throws Exception {
 		fixture.desfazerAdicionarPalavraNaLista();
 		assertNotNull(fixture);
@@ -30,7 +30,7 @@ public class TestConcreteCommandAdicionarPalavraNaLista {
 	@Test
 	public void testGetPalavraAdicionar() throws Exception {
 		String result = fixture.getPalavraAdicionar();
-		assertEquals("", result);
+		assertEquals("dog", result);
 	}
 
 }
