@@ -2,33 +2,30 @@ package test;
 
 import static org.junit.Assert.*;
 
-import java.awt.event.ActionEvent;
-
 import main.java.jogo.InterfaceEditarListasJogo;
 
+import org.junit.Before;
 import org.junit.Test;
 
 public class TestInterfaceEditarListasJogo {
+	private InterfaceEditarListasJogo fixture;
+
+	@Before
+	public void setUp() {
+		fixture = new InterfaceEditarListasJogo();
+	}
 
 	@Test
-	public void testCriarNovaListaPalavras()
-		throws Exception {
-		InterfaceEditarListasJogo fixture = new InterfaceEditarListasJogo();
+	public void testCriarNovaListaPalavras() throws Exception {
 		String nomeLista = "";
-
 		boolean result = fixture.criarNovaListaPalavras(nomeLista);
-
 		assertTrue(result);
 	}
 
 	@Test
-	public void testOrdenarPalavrasLista()
-		throws Exception {
-		InterfaceEditarListasJogo fixture = new InterfaceEditarListasJogo();
-		String[] palavras = new String[] {"", ""};
-
+	public void testOrdenarPalavrasLista() throws Exception {
+		String[] palavras = new String[] { "", "" };
 		String[] result = fixture.ordenarPalavrasLista(palavras);
-
 		assertNotNull(result);
 		assertEquals(2, result.length);
 		assertEquals("", result[0]);
@@ -36,15 +33,10 @@ public class TestInterfaceEditarListasJogo {
 	}
 
 	@Test
-	public void testRemoverListaPalavras()
-		throws Exception {
-		InterfaceEditarListasJogo fixture = new InterfaceEditarListasJogo();
+	public void testRemoverListaPalavras() throws Exception {
 		String nomeLista = "";
-
 		boolean result = fixture.removerListaPalavras(nomeLista);
-
-		assertTrue(result);
+		assertNotNull(result);
 	}
 
-	
 }
