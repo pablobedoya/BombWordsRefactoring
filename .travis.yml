@@ -8,4 +8,4 @@ script:
   - mvn install -DskipTests=false
 
 after_success:
-  - mvn clean -e  test cobertura:cobertura coveralls:cobertura
+  - mvn clean cobertura:cobertura coveralls:cobertura
