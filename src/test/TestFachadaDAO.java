@@ -82,7 +82,7 @@ public class TestFachadaDAO {
 		assertEquals("pegarLista", FachadaDAO.getFachadaDAO().pegarNomeListaASerUsadaNoJogo());
 	}
 
-	@Test
+/*	@Test
 	public void testExtrairPalavrasETraducoes() {
 		LinkedList<String> palavras = new LinkedList<>();
 		palavras.add("Activity");
@@ -93,7 +93,7 @@ public class TestFachadaDAO {
 		PalavrasETraducoes palavrasETraducoes = new PalavrasETraducoes(palavras, traducoes);
 		PalavrasETraducoes saida = FachadaDAO.getFachadaDAO().extrairPalavrasETraducoes("basico");
 	}
-
+*/
 	@Test
 	public void testAdicionarNovaPalavraNaLista() {
 		FachadaDAO.getFachadaDAO().adicionarNovaPalavraNaLista("novaLista",
