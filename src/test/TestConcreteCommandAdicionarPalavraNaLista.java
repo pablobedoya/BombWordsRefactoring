@@ -7,24 +7,25 @@ import org.junit.Test;
 
 public class TestConcreteCommandAdicionarPalavraNaLista {
 
-	@Test
-	public void testAdicionarPalavraNaLista1()
+	@Test(expected=Exception.class)
+	
+	public void testAdicionarPalavraNaLista()
 		throws Exception {
 		ConcreteCommandAdicionarPalavraNaLista fixture = new ConcreteCommandAdicionarPalavraNaLista("", "", "");
 
 		boolean result = fixture.adicionarPalavraNaLista();
 
-		assertEquals(false, result);
+		assertEquals(true, result);
 	}
 
-	@Test(expected=NullPointerException.class)
+	@Test(expected=Exception.class)
 	public void testDesfazerAdicionarPalavraNaLista()
 		throws Exception {
 		ConcreteCommandAdicionarPalavraNaLista fixture = new ConcreteCommandAdicionarPalavraNaLista("", "", "");
 
 		fixture.desfazerAdicionarPalavraNaLista();
 		
-		assertNull(fixture);
+		assertNotNull(fixture);
 	}
 
 	@Test
