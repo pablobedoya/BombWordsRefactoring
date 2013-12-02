@@ -1,6 +1,6 @@
 package test; 
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 import main.java.command.ConcreteCommandAdicionarPalavraNaLista;
 
 import org.junit.Test;
@@ -23,6 +23,8 @@ public class TestConcreteCommandAdicionarPalavraNaLista {
 		ConcreteCommandAdicionarPalavraNaLista fixture = new ConcreteCommandAdicionarPalavraNaLista("", "", "");
 
 		fixture.desfazerAdicionarPalavraNaLista();
+		
+		assertNull(fixture);
 	}
 
 	@Test

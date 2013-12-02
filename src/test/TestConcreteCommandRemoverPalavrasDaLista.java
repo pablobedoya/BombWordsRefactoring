@@ -1,5 +1,7 @@
 package test; 
 
+import static org.junit.Assert.*;
+
 import java.util.LinkedList;
 
 import main.java.command.ConcreteCommandRemoverPalavrasDaLista;
@@ -14,6 +16,8 @@ public class TestConcreteCommandRemoverPalavrasDaLista {
 		ConcreteCommandRemoverPalavrasDaLista fixture = new ConcreteCommandRemoverPalavrasDaLista(new LinkedList(), new LinkedList(), "");
 
 		fixture.desfazerRemocaoPalavrasDaLista();
+		
+		assertNotNull(fixture);
 	}
 
 	@Test
@@ -22,6 +26,8 @@ public class TestConcreteCommandRemoverPalavrasDaLista {
 		ConcreteCommandRemoverPalavrasDaLista fixture = new ConcreteCommandRemoverPalavrasDaLista(new LinkedList(), new LinkedList(), "");
 
 		fixture.removerPalavrasDaLista();
+		
+		assertNotNull(fixture);
 	}
 	
 }
