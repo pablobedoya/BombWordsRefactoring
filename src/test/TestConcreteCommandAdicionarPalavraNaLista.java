@@ -14,10 +14,10 @@ public class TestConcreteCommandAdicionarPalavraNaLista {
 
 		boolean result = fixture.adicionarPalavraNaLista();
 
-		assertEquals(false, result);
+		assertTrue(result);
 	}
 
-	@Test(expected=Exception.class)
+	@Test(expected=NullPointerException.class)
 	public void testDesfazerAdicionarPalavraNaLista()
 		throws Exception {
 		ConcreteCommandAdicionarPalavraNaLista fixture = new ConcreteCommandAdicionarPalavraNaLista("", "", "");
