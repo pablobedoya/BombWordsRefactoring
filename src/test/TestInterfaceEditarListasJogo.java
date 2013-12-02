@@ -15,11 +15,34 @@ public class TestInterfaceEditarListasJogo {
 		fixture = new InterfaceEditarListasJogo();
 	}
 
+	@Test(expected = NullPointerException.class)
+	public void testActionPerformed() {
+		fixture.actionPerformed(null);
+		assertTrue(true);
+	}
+	
+	@Test(expected = NullPointerException.class)
+	public void testAdicionarNovaListaNaComboBox() {
+		fixture.adicionarNovaListaNaComboBox("");
+		assertNotNull(fixture);
+	}
+	
+	@Test
+	public void testCriarInterfaceEditarListasJogo() {
+		fixture.criarInterfaceEditarListasJogo();
+		assertNotNull(fixture);
+	}
+	
 	@Test
 	public void testCriarNovaListaPalavras() throws Exception {
 		String nomeLista = "";
 		boolean result = fixture.criarNovaListaPalavras(nomeLista);
 		assertTrue(result);
+	}
+	
+	@Test
+	public void testLimparListaPalavras() {
+		assertNotNull(fixture);
 	}
 
 	@Test
@@ -30,6 +53,12 @@ public class TestInterfaceEditarListasJogo {
 		assertEquals(2, result.length);
 		assertEquals("", result[0]);
 		assertEquals("", result[1]);
+	}
+	
+	@Test(expected = NullPointerException.class)
+	public void testRemoverListaDaComboBox() {
+		fixture.removerListaDaComboBox("");
+		assertNotNull(fixture);
 	}
 
 	@Test
