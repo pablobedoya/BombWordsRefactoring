@@ -1,8 +1,6 @@
 package test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 import java.awt.event.ActionEvent;
 
@@ -13,38 +11,6 @@ import org.junit.Test;
 public class TestInterfaceEditarListasJogo {
 
 	@Test
-	public void testActionPerformed()
-		throws Exception {
-		InterfaceEditarListasJogo fixture = new InterfaceEditarListasJogo();
-		ActionEvent arg0 = new ActionEvent(new Object(), 1, "");
-
-		fixture.actionPerformed(arg0);
-		
-		assertNotNull(fixture);
-	}
-
-	@Test(expected=NullPointerException.class)
-	public void testAdicionarNovaListaNaComboBox()
-		throws Exception {
-		InterfaceEditarListasJogo fixture = new InterfaceEditarListasJogo();
-		String novaLista = "";
-
-		fixture.adicionarNovaListaNaComboBox(novaLista);
-
-		assertNotNull(fixture);
-	}
-
-	@Test
-	public void testCriarInterfaceEditarListasJogo()
-		throws Exception {
-		InterfaceEditarListasJogo fixture = new InterfaceEditarListasJogo();
-
-		fixture.criarInterfaceEditarListasJogo();
-
-		assertNotNull(fixture);
-	}
-
-	@Test
 	public void testCriarNovaListaPalavras()
 		throws Exception {
 		InterfaceEditarListasJogo fixture = new InterfaceEditarListasJogo();
@@ -53,17 +19,6 @@ public class TestInterfaceEditarListasJogo {
 		boolean result = fixture.criarNovaListaPalavras(nomeLista);
 
 		assertTrue(result);
-	}
-
-	@Test
-	public void testLimparListaPalavras()
-		throws Exception {
-		InterfaceEditarListasJogo fixture = new InterfaceEditarListasJogo();
-		String nomeLista = "";
-
-		//fixture.limparListaPalavras(nomeLista);
-
-		assertNotNull(fixture);
 	}
 
 	@Test
@@ -80,18 +35,6 @@ public class TestInterfaceEditarListasJogo {
 		assertEquals("", result[1]);
 	}
 
-
-	@Test(expected=NullPointerException.class)
-	public void testRemoverListaDaComboBox()
-		throws Exception {
-		InterfaceEditarListasJogo fixture = new InterfaceEditarListasJogo();
-		String lista = "";
-
-		fixture.removerListaDaComboBox(lista);
-
-		assertNotNull(fixture);
-	}
-
 	@Test
 	public void testRemoverListaPalavras()
 		throws Exception {
@@ -100,7 +43,7 @@ public class TestInterfaceEditarListasJogo {
 
 		boolean result = fixture.removerListaPalavras(nomeLista);
 
-		assertNotNull(result);
+		assertTrue(result);
 	}
 
 	
