@@ -100,7 +100,7 @@ public class TestInterfaceEditarListasJogo {
 
 		boolean result = fixture.removerListaPalavras(nomeLista);
 
-		assertTrue(result);
+		assertNotNull(result);
 	}
 
 	
