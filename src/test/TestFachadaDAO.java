@@ -88,7 +88,7 @@ public class TestFachadaDAO {
 		String listaOndeEstaoOsDados = "";
 		PalavrasETraducoes palavrasETraducoes = fachada.extrairPalavrasETraducoes(listaOndeEstaoOsDados);
 
-		assertEquals(null, palavrasETraducoes);
+		assertNotNull(palavrasETraducoes);
 	}
 	
 	@Test

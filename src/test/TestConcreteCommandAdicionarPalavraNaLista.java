@@ -17,7 +17,7 @@ public class TestConcreteCommandAdicionarPalavraNaLista {
 		assertTrue(result);
 	}
 
-	@Test(expected=NullPointerException.class)
+	@Test
 	public void testDesfazerAdicionarPalavraNaLista()
 		throws Exception {
 		ConcreteCommandAdicionarPalavraNaLista fixture = new ConcreteCommandAdicionarPalavraNaLista("", "", "");
