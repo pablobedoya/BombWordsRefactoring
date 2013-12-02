@@ -20,14 +20,12 @@ public class TestInterfacePalavrasJogadorErrou {
 	}
 
 	@Test
-	public void testInterfacePalavrasJogadorErrou() throws Exception {
+	public void testInterfacePalavrasJogadorErrou() {
 		
 		LinkedList<InterfaceBomba> bombasExplodidas = new LinkedList<InterfaceBomba>();
-		InterfacePalavrasJogadorErrou errou = new InterfacePalavrasJogadorErrou(bombasExplodidas);
-		assertNotNull(errou);
+		InterfacePalavrasJogadorErrou errouPalavra = new InterfacePalavrasJogadorErrou(bombasExplodidas);
+		assertNotNull(errouPalavra);
 	}
-
-
 
 
 	@Test
@@ -35,9 +33,7 @@ public class TestInterfacePalavrasJogadorErrou {
 		
 		InterfacePalavrasJogadorErrou jogadorErrou = new InterfacePalavrasJogadorErrou(new LinkedList<InterfaceBomba>());
 		jogadorErrou.criarTelaInterfacePalavrasJogadorErrou();
-
 	}
-
 
 	/*
 	@Test
@@ -45,22 +41,17 @@ public class TestInterfacePalavrasJogadorErrou {
 		InterfacePalavrasJogadorErrou fixture = new InterfacePalavrasJogadorErrou(new LinkedList<InterfaceBomba>());
 		String aSerEscrita = "";
 		fixture.escrever(aSerEscrita);
-		
-				
 	}*/
 
 	@Test
 	public void testInformarPalavrasErradasETraducao() {
-		InterfacePalavrasJogadorErrou fixture = new InterfacePalavrasJogadorErrou(new LinkedList<InterfaceBomba>());
-
-		fixture.informarPalavrasErradasETraducao();
-
+		InterfacePalavrasJogadorErrou palavraErrada = new InterfacePalavrasJogadorErrou(new LinkedList<InterfaceBomba>());
+		palavraErrada.informarPalavrasErradasETraducao();
 	}
 
 	@Test
 	public void testMain() {
 		String[] args = new String[] {};
 		InterfacePalavrasJogadorErrou.main(args);
-
 	}
 }
