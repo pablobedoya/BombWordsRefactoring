@@ -46,8 +46,7 @@ public class TestFachadaDAO {
 
 	@Test
 	public void testRemoverListaPalavras() {
-		assertFalse(FachadaDAO.getFachadaDAO()
-				.removerListaPalavras("naoExiste"));
+		assertFalse(FachadaDAO.getFachadaDAO().removerListaPalavras("naoExiste"));
 	}
 
 	@Test
@@ -64,7 +63,7 @@ public class TestFachadaDAO {
 		
 		FachadaDAO fixture = FachadaDAO.getFachadaDAO();
 		String[] result = fixture.extrairNomesDeTodasAsListasDePalavras();
-			assertNotNull(result);
+		assertNotNull(result);
 	}
 
 	@Test
@@ -82,7 +81,7 @@ public class TestFachadaDAO {
 		FachadaDAO.getFachadaDAO().mudarListaASerUsadaNoJogo("pegarLista");
 		assertEquals("pegarLista", FachadaDAO.getFachadaDAO().pegarNomeListaASerUsadaNoJogo());
 	}
-/*
+
 	@Test
 	public void testExtrairPalavrasETraducoes() {
 		LinkedList<String> palavras = new LinkedList<>();
@@ -92,9 +91,9 @@ public class TestFachadaDAO {
 		traducoes.add("Atividade");
 		traducoes.add("Ator");
 		PalavrasETraducoes palavrasETraducoes = new PalavrasETraducoes(palavras, traducoes);
-		PalavrasETraducoes saida = FachadaDAO.getFachadaDAO().extrairPalavrasETraducoes("novaLista15");
+		PalavrasETraducoes saida = FachadaDAO.getFachadaDAO().extrairPalavrasETraducoes("basico");
 	}
-*/
+
 	@Test
 	public void testAdicionarNovaPalavraNaLista() {
 		FachadaDAO.getFachadaDAO().adicionarNovaPalavraNaLista("novaLista",
@@ -113,8 +112,7 @@ public class TestFachadaDAO {
 		String[] esperado = { "phi;4300;5;9", "j;2300;10;20", "pi;800;10;20",
 				"phi;600;5;5", "Phi;600;5;5", "Josiel;400;10;20",
 				"pablo;400;10;20", "Ezequely;10;10;20" };
-		assertArrayEquals("Sucesso", esperado, FachadaDAO.getFachadaDAO()
-				.lerRanking());
+		assertArrayEquals("Sucesso", esperado, FachadaDAO.getFachadaDAO().lerRanking());
 	}
 
 	@Test
