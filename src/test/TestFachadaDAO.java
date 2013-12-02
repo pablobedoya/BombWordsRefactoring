@@ -82,18 +82,15 @@ public class TestFachadaDAO {
 		assertEquals("pegarLista", FachadaDAO.getFachadaDAO().pegarNomeListaASerUsadaNoJogo());
 	}
 
-/*	@Test
+	@Test
 	public void testExtrairPalavrasETraducoes() {
-		LinkedList<String> palavras = new LinkedList<>();
-		palavras.add("Activity");
-		palavras.add("Actor");
-		LinkedList<String> traducoes = new LinkedList<>();
-		traducoes.add("Atividade");
-		traducoes.add("Ator");
-		PalavrasETraducoes palavrasETraducoes = new PalavrasETraducoes(palavras, traducoes);
-		PalavrasETraducoes saida = FachadaDAO.getFachadaDAO().extrairPalavrasETraducoes("basico");
+		FachadaDAO fachada = FachadaDAO.getFachadaDAO();
+		String listaOndeEstaoOsDados = "";
+		PalavrasETraducoes palavrasETraducoes = fachada.extrairPalavrasETraducoes(listaOndeEstaoOsDados);
+
+		assertEquals(null, palavrasETraducoes);
 	}
-*/
+	
 	@Test
 	public void testAdicionarNovaPalavraNaLista() {
 		FachadaDAO.getFachadaDAO().adicionarNovaPalavraNaLista("novaLista",
