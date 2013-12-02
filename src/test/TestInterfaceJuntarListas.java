@@ -29,7 +29,7 @@ public class TestInterfaceJuntarListas {
 		throws Exception {
 		InterfaceJuntarListas fixture = new InterfaceJuntarListas();
 
-		fixture.criarInterfaceJuntarListas();
+		//fixture.criarInterfaceJuntarListas();
 
 		assertNotNull(fixture);
 	}
