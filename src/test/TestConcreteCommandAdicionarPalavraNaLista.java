@@ -7,15 +7,14 @@ import org.junit.Test;
 
 public class TestConcreteCommandAdicionarPalavraNaLista {
 
-	@Test(expected=Exception.class)
-	
+	@Test
 	public void testAdicionarPalavraNaLista()
 		throws Exception {
 		ConcreteCommandAdicionarPalavraNaLista fixture = new ConcreteCommandAdicionarPalavraNaLista("", "", "");
 
 		boolean result = fixture.adicionarPalavraNaLista();
 
-		assertEquals(true, result);
+		assertEquals(false, result);
 	}
 
 	@Test(expected=Exception.class)
