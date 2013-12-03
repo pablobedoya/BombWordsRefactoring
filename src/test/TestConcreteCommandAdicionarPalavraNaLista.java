@@ -16,7 +16,7 @@ public class TestConcreteCommandAdicionarPalavraNaLista {
 	}
 
 	@Test
-	public void testAdicionarPalavraNaLista() throws Exception {
+	public void testAdicionarPalavraNaLista() {
 		boolean result = fixture.adicionarPalavraNaLista();
 		assertTrue(result);
 	}

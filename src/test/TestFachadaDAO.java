@@ -55,7 +55,7 @@ public class TestFachadaDAO {
 		String nomeLista = "listaasasblabla";
 
 		boolean result = fixture.criarNovaListaPalavras(nomeLista);
-		assertTrue(result);
+		assertFalse(result);
 	}
 
 	@Test

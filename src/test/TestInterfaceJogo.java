@@ -9,15 +9,18 @@ import java.awt.event.KeyEvent;
 import javax.swing.Box;
 import javax.swing.JPanel;
 
+import main.java.fachadaparadao.FachadaDAO;
 import main.java.jogo.UInterfaceBomba;
 import main.java.jogo.UInterfaceJogo;
 import main.java.jogo.Jogador;
 import main.java.jogo.PalavrasETraducoes;
 
+import org.junit.Before;
 import org.junit.Test;
 
 public class TestInterfaceJogo {
-/*
+
+	/*
 	@Test(expected = NullPointerException.class)
 	public void testGetInterfaceJogo() {
 		assertNotNull(InterfaceJogo.getInterfaceJogo());
@@ -37,8 +40,8 @@ public class TestInterfaceJogo {
 */
 	@Test(expected = NullPointerException.class)
 	public void testCriarCampoBombas() throws Exception {
-		UInterfaceJogo fixture = UInterfaceJogo.getInterfaceJogo();
-		JPanel result = fixture.criarCampoBombas();
+		UInterfaceJogo fixture = null;
+		JPanel result = fixture.getInterfaceJogo().criarCampoBombas();
 		assertNotNull(result);
 	}
 
