@@ -93,14 +93,12 @@ public class TestFachadaDAO {
 	
 	@Test
 	public void testAdicionarNovaPalavraNaLista() {
-		FachadaDAO.getFachadaDAO().adicionarNovaPalavraNaLista("novaLista",
-				"Vasco da Gama", "Maior do Mundo");
+		FachadaDAO.getFachadaDAO().adicionarNovaPalavraNaLista("novaLista", "Vasco da Gama", "Maior do Mundo");
 	}
 
 	@Test
 	public void testRemoverPalavraDaLista() {
-		FachadaDAO.getFachadaDAO().removerPalavraDaLista("palavras",
-				"Maior do Mundo");
+		FachadaDAO.getFachadaDAO().removerPalavraDaLista("palavras", "Maior do Mundo");
 	}
 
 	@Test
