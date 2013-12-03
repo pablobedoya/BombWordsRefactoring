@@ -5,14 +5,14 @@ import java.util.Random;
 
 public class ThreadAtivaBomba extends Thread
 {
-	private InterfaceJogo interfaceJogo;
+	private UInterfaceJogo interfaceJogo;
 	private int tempoAtivarBomba;
 	private int tempoBombaExplodir;
-	private LinkedList<InterfaceBomba> bombasExplodidasPeloJogador;
+	private LinkedList<UInterfaceBomba> bombasExplodidasPeloJogador;
 	
-	public ThreadAtivaBomba(int tempoAtivar, int tempoExplodir, LinkedList<InterfaceBomba> bombasExplodidas)
+	public ThreadAtivaBomba(int tempoAtivar, int tempoExplodir, LinkedList<UInterfaceBomba> bombasExplodidas)
 	{
-		this.interfaceJogo = InterfaceJogo.getInterfaceJogo();
+		this.interfaceJogo = UInterfaceJogo.getInterfaceJogo();
 		this.tempoAtivarBomba = tempoAtivar;
 		tempoBombaExplodir = tempoExplodir;
 		bombasExplodidasPeloJogador = bombasExplodidas;

@@ -11,14 +11,14 @@ public class Jogador
 	private String nome;
 	private int pontosVida;
 	private int placar;
-	private InterfaceJogo interfaceJogo;
+	private UInterfaceJogo interfaceJogo;
 	
 	public Jogador(String nom)
 	{
 		nome = nom;
 		pontosVida = 5;
 		placar = 0;
-		interfaceJogo = InterfaceJogo.getInterfaceJogo();
+		interfaceJogo = UInterfaceJogo.getInterfaceJogo();
 	}
 	
 	public String getNome()
@@ -62,18 +62,18 @@ public class Jogador
 	}
 	
 	
-	public void verRanking(LinkedList<InterfaceBomba> bombasQueOJogadorExplodiu)
+	public void verRanking(LinkedList<UInterfaceBomba> bombasQueOJogadorExplodiu)
 	{
-		InterfaceRanking janelaRanking = new InterfaceRanking();
+		UInterfaceRanking janelaRanking = new UInterfaceRanking();
 		String [] placarJogadores = FachadaDAO.getFachadaDAO().lerRanking();
 		janelaRanking.criarJanelaRanking(placarJogadores);
 		
-		InterfacePalavrasJogadorErrou erradas = new InterfacePalavrasJogadorErrou(bombasQueOJogadorExplodiu);
+		UInterfacePalavrasJogadorErrou erradas = new UInterfacePalavrasJogadorErrou(bombasQueOJogadorExplodiu);
 		erradas.criarTelaInterfacePalavrasJogadorErrou();
 	}
 	
 	
-	public void jogar(LinkedList<InterfaceBomba> bombasQueOJogadorExplodiu)
+	public void jogar(LinkedList<UInterfaceBomba> bombasQueOJogadorExplodiu)
 	{
 		while(pontosVida > 0)
 		{

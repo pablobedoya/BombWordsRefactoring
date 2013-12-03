@@ -2,8 +2,8 @@ package test;
 
 import java.util.LinkedList;
 import main.java.fachadaparadao.FachadaDAO;
-import main.java.jogo.InterfaceBomba;
-import main.java.jogo.InterfaceJogo;
+import main.java.jogo.UInterfaceBomba;
+import main.java.jogo.UInterfaceJogo;
 import main.java.jogo.Jogador;
 import main.java.jogo.TelaInicial;
 import main.java.jogo.ThreadAtivaBomba;
@@ -30,7 +30,7 @@ public class MainTest
 		}
 		
 		
-		InterfaceJogo interfaceDoJogo = InterfaceJogo.getInterfaceJogo();
+		UInterfaceJogo interfaceDoJogo = UInterfaceJogo.getInterfaceJogo();
 		interfaceDoJogo.criarInterfaceJogo();
 		
 		Jogador jogador = new Jogador(nomeJogador);
@@ -45,7 +45,7 @@ public class MainTest
 		tempoAteBombaNovaAparecer = Integer.valueOf(configuracoesDoJogo[0]) * 1000;
 		tempoParaBombaExplodir = Integer.valueOf(configuracoesDoJogo[1]);
 		
-		LinkedList<InterfaceBomba> bombasQueOJogadorExplodiu = new LinkedList<InterfaceBomba>();
+		LinkedList<UInterfaceBomba> bombasQueOJogadorExplodiu = new LinkedList<UInterfaceBomba>();
 		ThreadAtivaBomba threadAtiva = new ThreadAtivaBomba(tempoAteBombaNovaAparecer, tempoParaBombaExplodir, bombasQueOJogadorExplodiu);
 		threadAtiva.start();
 		

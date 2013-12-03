@@ -4,17 +4,17 @@ import static org.junit.Assert.*;
 
 import java.awt.AWTException;
 
-import main.java.jogo.InterfaceSetarBomba;
+import main.java.jogo.UInterfaceSetarBomba;
 
 import org.junit.Before;
 import org.junit.Test;
 
 public class TestInterfaceSetarBomba {
 
-	InterfaceSetarBomba interfaceSetarBomba;
+	UInterfaceSetarBomba interfaceSetarBomba;
 	@Before
 	public void setUp() throws Exception {
-		interfaceSetarBomba = new InterfaceSetarBomba();
+		interfaceSetarBomba = new UInterfaceSetarBomba();
 	}
 
 	@Test

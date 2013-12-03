@@ -2,7 +2,7 @@ package main.java.dao;
 
 import main.java.jogo.PalavrasETraducoes;
 
-public interface DAOPalavrasDeLista 
+public interface InterfaceDAOPalavrasDeLista 
 {
 	public PalavrasETraducoes extrairPalavrasETraducoes(String listaOndeEstaoOsDados);
 	

@@ -2,7 +2,7 @@ package test;
 
 import java.util.LinkedList;
 import main.java.jogo.ChecaSeJogadorAcertouTraducao;
-import main.java.jogo.InterfaceBomba;
+import main.java.jogo.UInterfaceBomba;
 import org.junit.*;
 import static org.junit.Assert.*;
 
@@ -24,7 +24,7 @@ public class TestChecaSeJogadorAcertouTraducao {
 	
 		@Test
 		public void testChecaSeJogadorAcertouTraducao() {
-			InterfaceBomba[] imagensBombs = new InterfaceBomba[] {};
+			UInterfaceBomba[] imagensBombs = new UInterfaceBomba[] {};
 
 			ChecaSeJogadorAcertouTraducao resultado = new ChecaSeJogadorAcertouTraducao(imagensBombs);
 			
@@ -34,10 +34,10 @@ public class TestChecaSeJogadorAcertouTraducao {
 		
 		@Test
 		public void testQuaisBombasDevemSerDesativadas () {
-			ChecaSeJogadorAcertouTraducao fixture = new ChecaSeJogadorAcertouTraducao(new InterfaceBomba[] {});
+			ChecaSeJogadorAcertouTraducao fixture = new ChecaSeJogadorAcertouTraducao(new UInterfaceBomba[] {});
 			String palpiteJogador = " ";
 
-			LinkedList<InterfaceBomba> resultado = fixture.quaisBombasDevemSerDesativadas(palpiteJogador);
+			LinkedList<UInterfaceBomba> resultado = fixture.quaisBombasDevemSerDesativadas(palpiteJogador);
 
 			assertEquals(null, resultado);
 		}

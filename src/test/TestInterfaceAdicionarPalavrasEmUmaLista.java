@@ -7,19 +7,19 @@ import java.awt.event.KeyEvent;
 
 import javax.swing.Box;
 
-import main.java.jogo.InterfaceAdicionarPalavrasEmUmaLista;
-import main.java.jogo.InterfaceListaPalavras;
+import main.java.jogo.UInterfaceAdicionarPalavrasEmUmaLista;
+import main.java.jogo.UInterfaceListaPalavras;
 
 import org.junit.Before;
 import org.junit.Test;
 
 public class TestInterfaceAdicionarPalavrasEmUmaLista {
 
-	private InterfaceAdicionarPalavrasEmUmaLista fixture;
+	private UInterfaceAdicionarPalavrasEmUmaLista fixture;
 
 	@Before
 	public void setUp() {
-		fixture = new InterfaceAdicionarPalavrasEmUmaLista();
+		fixture = new UInterfaceAdicionarPalavrasEmUmaLista();
 	}
 
 	@Test
@@ -32,7 +32,7 @@ public class TestInterfaceAdicionarPalavrasEmUmaLista {
 	@Test
 	public void testCriarJanelaEditarLista() throws Exception {
 		String nomeLista = "";
-		InterfaceListaPalavras interfaceMuda = new InterfaceListaPalavras();
+		UInterfaceListaPalavras interfaceMuda = new UInterfaceListaPalavras();
 		assertNotNull(fixture);
 	}
 

@@ -2,17 +2,17 @@ package test;
 
 import static org.junit.Assert.*;
 
-import main.java.jogo.InterfaceEditarListasJogo;
+import main.java.jogo.UInterfaceEditarListasJogo;
 
 import org.junit.Before;
 import org.junit.Test;
 
 public class TestInterfaceEditarListasJogo {
-	private InterfaceEditarListasJogo fixture;
+	private UInterfaceEditarListasJogo fixture;
 
 	@Before
 	public void setUp() {
-		fixture = new InterfaceEditarListasJogo();
+		fixture = new UInterfaceEditarListasJogo();
 	}
 
 	@Test(expected = NullPointerException.class)

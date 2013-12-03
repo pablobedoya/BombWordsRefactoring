@@ -11,7 +11,7 @@ import java.io.OutputStreamWriter;
 import java.io.Reader;
 
 
-public class ConcreteDAOListaDePalavrasArquivos implements DAOListaDePalavras
+public class ConcreteDAOListaDePalavrasArquivos implements InterfaceDAOListaDePalavras
 {
 	@Override
 	public boolean criarNovaListaPalavras(String nomeLista) 

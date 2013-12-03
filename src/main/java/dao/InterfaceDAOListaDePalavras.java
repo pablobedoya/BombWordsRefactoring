@@ -1,6 +1,6 @@
 package main.java.dao;
 
-public interface DAOListaDePalavras
+public interface InterfaceDAOListaDePalavras
 {
 	public boolean criarNovaListaPalavras(String nomeLista);
 	public boolean removerListaPalavras(String nomeLista);

@@ -12,13 +12,13 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class InterfacePalavrasJogadorErrou 
+public class UInterfacePalavrasJogadorErrou 
 {
 	private JFrame janelaJogadorErrou;
 	private TextArea areaEscrita;
-	private LinkedList<InterfaceBomba> bombasQueOJogadorExplodiu;
+	private LinkedList<UInterfaceBomba> bombasQueOJogadorExplodiu;
 	
-	public InterfacePalavrasJogadorErrou(LinkedList<InterfaceBomba> bombasExplodidas)
+	public UInterfacePalavrasJogadorErrou(LinkedList<UInterfaceBomba> bombasExplodidas)
 	{
 		bombasQueOJogadorExplodiu = bombasExplodidas;
 		
@@ -118,7 +118,7 @@ public class InterfacePalavrasJogadorErrou
 		String linha = "";
 		for(int i = 0; i < bombasQueOJogadorExplodiu.size(); i++)
 		{
-			InterfaceBomba bomba = bombasQueOJogadorExplodiu.get(i);
+			UInterfaceBomba bomba = bombasQueOJogadorExplodiu.get(i);
 			linha = "palavra: " + bomba.getPalavra();
 			this.escrever(linha);
 			linha = "traducao: " + bomba.getTraducao();
@@ -130,14 +130,14 @@ public class InterfacePalavrasJogadorErrou
 	
 	public static void main(String args[])
 	{
-		LinkedList<InterfaceBomba> bombas = new LinkedList<InterfaceBomba>();
-		bombas.add(new InterfaceBomba("hi", "oi"));
-		bombas.add(new InterfaceBomba("goodbye", "tchau"));
-		bombas.add(new InterfaceBomba("excellent", "excelente"));
-		bombas.add(new InterfaceBomba("that is a good question", "e uma boa pergunta"));
-		bombas.add(new InterfaceBomba("music", "musica"));
+		LinkedList<UInterfaceBomba> bombas = new LinkedList<UInterfaceBomba>();
+		bombas.add(new UInterfaceBomba("hi", "oi"));
+		bombas.add(new UInterfaceBomba("goodbye", "tchau"));
+		bombas.add(new UInterfaceBomba("excellent", "excelente"));
+		bombas.add(new UInterfaceBomba("that is a good question", "e uma boa pergunta"));
+		bombas.add(new UInterfaceBomba("music", "musica"));
 		
-		InterfacePalavrasJogadorErrou inter = new InterfacePalavrasJogadorErrou(bombas);
+		UInterfacePalavrasJogadorErrou inter = new UInterfacePalavrasJogadorErrou(bombas);
 		inter.criarTelaInterfacePalavrasJogadorErrou();
 	}
 	

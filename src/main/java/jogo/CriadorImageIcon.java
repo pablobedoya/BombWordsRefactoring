@@ -6,10 +6,10 @@ public class CriadorImageIcon//cria ImageIcons para usar nas interfaces do jogo
 {
 	public static ImageIcon criarImageIcon(String endereco, String descricao) 
 	{
-		java.net.URL urlImagem = InterfaceJogo.class.getResource(endereco);
+		java.net.URL urlImagem = UInterfaceJogo.class.getResource(endereco);
 		if(urlImagem != null)
 		{
-			return new ImageIcon(InterfaceJogo.class.getResource(endereco), descricao);
+			return new ImageIcon(UInterfaceJogo.class.getResource(endereco), descricao);
 		}
 		
 		else

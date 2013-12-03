@@ -6,19 +6,19 @@ public class ChecaSeJogadorAcertouTraducao
 {
 	//classe sao chamada quando a InterfaceJogo precisa saber quais bombas desativar
 	
-	private InterfaceBomba[] imagensBombas;
+	private UInterfaceBomba[] imagensBombas;
 	
-	public ChecaSeJogadorAcertouTraducao(InterfaceBomba[] imagensBombs)
+	public ChecaSeJogadorAcertouTraducao(UInterfaceBomba[] imagensBombs)
 	{
 		imagensBombas = imagensBombs;
 	}
 	
-	public LinkedList<InterfaceBomba> quaisBombasDevemSerDesativadas(String palpiteJogador)
+	public LinkedList<UInterfaceBomba> quaisBombasDevemSerDesativadas(String palpiteJogador)
 	{
 		/*checa se o palpite do jogador eh igual a alguma traducao de uma das imagensBombas
 		  e retorna somente quais bombas devem ser desativadas(jogador acertou a traducao)*/
 		
-		LinkedList<InterfaceBomba> bombasARemover = new LinkedList<InterfaceBomba>();
+		LinkedList<UInterfaceBomba> bombasARemover = new LinkedList<UInterfaceBomba>();
 		palpiteJogador = palpiteJogador.toLowerCase();
 
 		for(int i = 0; i < this.imagensBombas.length; i++)

@@ -14,7 +14,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class InterfaceRanking implements ActionListener
+public class UInterfaceRanking implements ActionListener
 {
 	private JFrame janelaRanking;
 	private JLabel [] posicaoRanking;
@@ -26,7 +26,7 @@ public class InterfaceRanking implements ActionListener
 	private JButton fecharJogo;
 	
 	
-	public InterfaceRanking()
+	public UInterfaceRanking()
 	{
 		janelaRanking = new JFrame();
 		janelaRanking.setTitle("Placar");

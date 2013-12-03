@@ -4,19 +4,19 @@ import main.java.dao.ConcreteDAOConfiguracoesDeJogoArquivos;
 import main.java.dao.ConcreteDAOListaDePalavrasArquivos;
 import main.java.dao.ConcreteDAOPalavrasDeListaArquivos;
 import main.java.dao.ConcreteDAORankingArquivos;
-import main.java.dao.DAOConfiguracoesDeJogo;
-import main.java.dao.DAOListaDePalavras;
-import main.java.dao.DAOPalavrasDeLista;
-import main.java.dao.DAORanking;
+import main.java.dao.InterfaceDAOConfiguracoesDeJogo;
+import main.java.dao.InterfaceDAOListaDePalavras;
+import main.java.dao.InterfaceDAOPalavrasDeLista;
+import main.java.dao.InterfaceDAORanking;
 import main.java.jogo.PalavrasETraducoes;
 
 public class FachadaDAO 
 {
 	private static FachadaDAO singletonFachadaDAO;
-	private DAOConfiguracoesDeJogo acessaConfiguracoesJogo;
-	private DAOListaDePalavras acessaListasDePalavras;
-	private DAOPalavrasDeLista acessaPalavrasDeLista;
-	private DAORanking acessaRanking;
+	private InterfaceDAOConfiguracoesDeJogo acessaConfiguracoesJogo;
+	private InterfaceDAOListaDePalavras acessaListasDePalavras;
+	private InterfaceDAOPalavrasDeLista acessaPalavrasDeLista;
+	private InterfaceDAORanking acessaRanking;
 	
 	
 	private FachadaDAO()

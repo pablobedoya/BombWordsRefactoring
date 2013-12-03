@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import main.java.fachadaparadao.FachadaDAO;
 
 
-public class ConcreteCommandRemoverPalavrasDaLista implements CommandRemoverPalavrasDaLista
+public class ConcreteCommandRemoverPalavrasDaLista implements InterfaceCommandRemoverPalavrasDaLista
 {
 	private LinkedList<String> palavrasRemover;
 	private LinkedList<String> traducoesDasPalavrasRemover;

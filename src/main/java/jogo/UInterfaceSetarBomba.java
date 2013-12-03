@@ -19,7 +19,7 @@ import javax.swing.JTextField;
 import main.java.fachadaparadao.FachadaDAO;
 
 
-public class InterfaceSetarBomba implements ActionListener, KeyListener
+public class UInterfaceSetarBomba implements ActionListener, KeyListener
 {
 	private int tempoParaSetarBomba;
 	private int tempoParaBombaExplodir;
@@ -28,7 +28,7 @@ public class InterfaceSetarBomba implements ActionListener, KeyListener
 	private JButton salvarAlteracoes;
 	private JButton configuracaoDefault;
 	
-	public InterfaceSetarBomba()
+	public UInterfaceSetarBomba()
 	{
 		String [] configuracoes = FachadaDAO.getFachadaDAO().lerConfiguracoesJogo(); 
 			

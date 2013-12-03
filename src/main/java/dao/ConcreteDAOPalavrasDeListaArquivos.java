@@ -14,7 +14,7 @@ import main.java.jogo.PalavrasETraducoes;
 
 
 
-public class ConcreteDAOPalavrasDeListaArquivos implements DAOPalavrasDeLista
+public class ConcreteDAOPalavrasDeListaArquivos implements InterfaceDAOPalavrasDeLista
 {
 	@Override
 	public PalavrasETraducoes extrairPalavrasETraducoes(String listaOndeEstaoOsDados) 

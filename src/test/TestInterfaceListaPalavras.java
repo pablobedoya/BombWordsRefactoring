@@ -12,8 +12,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 
-import main.java.command.CommandRemoverPalavrasDaLista;
-import main.java.jogo.InterfaceListaPalavras;
+import main.java.command.InterfaceCommandRemoverPalavrasDaLista;
+import main.java.jogo.UInterfaceListaPalavras;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -34,8 +34,8 @@ public class TestInterfaceListaPalavras {
 	private LinkedList<JLabel> labelsPalavrasLista;//conjunto de labels com palavras da lista visualizada.
 	private LinkedList<Boolean> palavrasEstaoSelecionadasNaLista;/*cada booleano dessa lista corresponde a uma palavra da lista visualizada. 
 																	O booleano indica se a palavra foi selecionada pelo usuario.*/
-	private LinkedList<CommandRemoverPalavrasDaLista> comandosRemoverPalavrasDaLista;//para possibilitar refazer
-	private InterfaceListaPalavras intLista = new InterfaceListaPalavras();
+	private LinkedList<InterfaceCommandRemoverPalavrasDaLista> comandosRemoverPalavrasDaLista;//para possibilitar refazer
+	private UInterfaceListaPalavras intLista = new UInterfaceListaPalavras();
 	
 	@Before
 	public void setUp() throws Exception {

@@ -7,18 +7,18 @@ import java.awt.event.KeyEvent;
 
 import javax.swing.Box;
 
-import main.java.jogo.InterfaceJuntarListas;
+import main.java.jogo.UInterfaceJuntarListas;
 
 import org.junit.Before;
 import org.junit.Test;
 
 public class TestInterfaceJuntarListas {
 	
-	private InterfaceJuntarListas fixture;
+	private UInterfaceJuntarListas fixture;
 	
 	@Before
 	public void setUp() {
-		fixture = new InterfaceJuntarListas();
+		fixture = new UInterfaceJuntarListas();
 	}
 
 	@Test

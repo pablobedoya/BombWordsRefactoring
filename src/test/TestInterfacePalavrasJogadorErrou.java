@@ -2,8 +2,8 @@ package test;
 
 import java.util.LinkedList;
 
-import main.java.jogo.InterfaceBomba;
-import main.java.jogo.InterfacePalavrasJogadorErrou;
+import main.java.jogo.UInterfaceBomba;
+import main.java.jogo.UInterfacePalavrasJogadorErrou;
 import org.junit.*;
 import static org.junit.Assert.*;
 
@@ -22,8 +22,8 @@ public class TestInterfacePalavrasJogadorErrou {
 	@Test
 	public void testInterfacePalavrasJogadorErrou() {
 		
-		LinkedList<InterfaceBomba> bombasExplodidas = new LinkedList<InterfaceBomba>();
-		InterfacePalavrasJogadorErrou errouPalavra = new InterfacePalavrasJogadorErrou(bombasExplodidas);
+		LinkedList<UInterfaceBomba> bombasExplodidas = new LinkedList<UInterfaceBomba>();
+		UInterfacePalavrasJogadorErrou errouPalavra = new UInterfacePalavrasJogadorErrou(bombasExplodidas);
 		assertNotNull(errouPalavra);
 	}
 
@@ -31,7 +31,7 @@ public class TestInterfacePalavrasJogadorErrou {
 	@Test
 	public void testCriarTelaInterfacePalavrasJogadorErrou() {
 		
-		InterfacePalavrasJogadorErrou jogadorErrou = new InterfacePalavrasJogadorErrou(new LinkedList<InterfaceBomba>());
+		UInterfacePalavrasJogadorErrou jogadorErrou = new UInterfacePalavrasJogadorErrou(new LinkedList<UInterfaceBomba>());
 		jogadorErrou.criarTelaInterfacePalavrasJogadorErrou();
 	}
 
@@ -45,13 +45,13 @@ public class TestInterfacePalavrasJogadorErrou {
 
 	@Test
 	public void testInformarPalavrasErradasETraducao() {
-		InterfacePalavrasJogadorErrou palavraErrada = new InterfacePalavrasJogadorErrou(new LinkedList<InterfaceBomba>());
+		UInterfacePalavrasJogadorErrou palavraErrada = new UInterfacePalavrasJogadorErrou(new LinkedList<UInterfaceBomba>());
 		palavraErrada.informarPalavrasErradasETraducao();
 	}
 
 	@Test
 	public void testMain() {
 		String[] args = new String[] {};
-		InterfacePalavrasJogadorErrou.main(args);
+		UInterfacePalavrasJogadorErrou.main(args);
 	}
 }

@@ -6,7 +6,7 @@ import static org.junit.Assert.assertNotNull;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import main.java.jogo.InterfaceBomba;
+import main.java.jogo.UInterfaceBomba;
 
 import org.junit.Test;
 
@@ -15,7 +15,7 @@ public class TestInterfaceBomba {
 	@Test
 	public void testAtivarBomba()
 		throws Exception {
-		InterfaceBomba fixture = new InterfaceBomba("", "");
+		UInterfaceBomba fixture = new UInterfaceBomba("", "");
 		fixture.setAtivada(true);
 		int tempoParaBombaExplodir = 1;
 
@@ -27,7 +27,7 @@ public class TestInterfaceBomba {
 	@Test
 	public void testGetAtivada()
 		throws Exception {
-		InterfaceBomba fixture = new InterfaceBomba("", "");
+		UInterfaceBomba fixture = new UInterfaceBomba("", "");
 		fixture.setAtivada(true);
 
 		boolean result = fixture.getAtivada();
@@ -39,7 +39,7 @@ public class TestInterfaceBomba {
 	@Test
 	public void testGetLabelBomba()
 		throws Exception {
-		InterfaceBomba fixture = new InterfaceBomba("", "");
+		UInterfaceBomba fixture = new UInterfaceBomba("", "");
 		fixture.setAtivada(true);
 
 		JLabel result = fixture.getLabelBomba();
@@ -125,7 +125,7 @@ public class TestInterfaceBomba {
 	@Test
 	public void testGetPalavra()
 		throws Exception {
-		InterfaceBomba fixture = new InterfaceBomba("", "");
+		UInterfaceBomba fixture = new UInterfaceBomba("", "");
 		fixture.setAtivada(true);
 
 		String result = fixture.getPalavra();
@@ -136,7 +136,7 @@ public class TestInterfaceBomba {
 	@Test
 	public void testGetTraducao()
 		throws Exception {
-		InterfaceBomba fixture = new InterfaceBomba("", "");
+		UInterfaceBomba fixture = new UInterfaceBomba("", "");
 		fixture.setAtivada(true);
 
 		String result = fixture.getTraducao();
@@ -148,7 +148,7 @@ public class TestInterfaceBomba {
 	@Test
 	public void testGetUneBombaEPalavra()
 		throws Exception {
-		InterfaceBomba fixture = new InterfaceBomba("", "");
+		UInterfaceBomba fixture = new UInterfaceBomba("", "");
 		fixture.setAtivada(true);
 
 		JPanel result = fixture.getUneBombaEPalavra();
@@ -224,7 +224,7 @@ public class TestInterfaceBomba {
 	@Test
 	public void testOcultarBomba()
 		throws Exception {
-		InterfaceBomba fixture = new InterfaceBomba("", "");
+		UInterfaceBomba fixture = new UInterfaceBomba("", "");
 		fixture.setAtivada(true);
 
 		fixture.ocultarBomba();
@@ -235,7 +235,7 @@ public class TestInterfaceBomba {
 	@Test
 	public void testSetAtivada()
 		throws Exception {
-		InterfaceBomba fixture = new InterfaceBomba("", "");
+		UInterfaceBomba fixture = new UInterfaceBomba("", "");
 		fixture.setAtivada(true);
 		boolean novo = true;
 
@@ -247,7 +247,7 @@ public class TestInterfaceBomba {
 	@Test
 	public void testSetPalavra()
 		throws Exception {
-		InterfaceBomba fixture = new InterfaceBomba("", "");
+		UInterfaceBomba fixture = new UInterfaceBomba("", "");
 		fixture.setAtivada(true);
 		String nova = "";
 
@@ -259,7 +259,7 @@ public class TestInterfaceBomba {
 	@Test
 	public void testSetTraducao()
 		throws Exception {
-		InterfaceBomba fixture = new InterfaceBomba("", "");
+		UInterfaceBomba fixture = new UInterfaceBomba("", "");
 		fixture.setAtivada(true);
 		String nova = "";
 

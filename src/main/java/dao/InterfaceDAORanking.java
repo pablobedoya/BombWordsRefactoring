@@ -1,6 +1,6 @@
 package main.java.dao;
 
-public interface DAORanking 
+public interface InterfaceDAORanking 
 {
 	public void inserirJogadorRanking(String nomeJogador, int pontuacao);
 	public String [] lerRanking(); 

@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.Reader;
 
-public class ConcreteDAOConfiguracoesDeJogoArquivos  implements DAOConfiguracoesDeJogo
+public class ConcreteDAOConfiguracoesDeJogoArquivos  implements InterfaceDAOConfiguracoesDeJogo
 {
 	@Override
 	public String[] lerConfiguracoesJogo() 

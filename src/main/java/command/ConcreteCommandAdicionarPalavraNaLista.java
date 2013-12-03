@@ -2,7 +2,7 @@ package main.java.command;
 
 import main.java.fachadaparadao.FachadaDAO;
 
-public class ConcreteCommandAdicionarPalavraNaLista implements CommandAdicionarPalavraNaLista
+public class ConcreteCommandAdicionarPalavraNaLista implements InterfaceCommandAdicionarPalavraNaLista
 {
 	private String palavraAdicionar;
 	private String traducaoPalavraAdicionar;

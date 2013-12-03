@@ -18,7 +18,7 @@ import javax.swing.JPanel;
 import main.java.fachadaparadao.FachadaDAO;
 
 
-public class InterfaceEditarListasJogo implements ActionListener
+public class UInterfaceEditarListasJogo implements ActionListener
 {
 	private JFrame janelaEditaListas;
 	private JButton criarNovaLista;
@@ -27,7 +27,7 @@ public class InterfaceEditarListasJogo implements ActionListener
 	private JButton editarPalavrasDasListas;
 	private JComboBox comboBoxListasDoJogo;
 	
-	public InterfaceEditarListasJogo()
+	public UInterfaceEditarListasJogo()
 	{
 		
 	}
@@ -293,7 +293,7 @@ public class InterfaceEditarListasJogo implements ActionListener
 		}
 		else if(arg0.getSource() == this.editarPalavrasDasListas)
 		{
-			InterfaceListaPalavras mudarPalavrasDasListas = new InterfaceListaPalavras();
+			UInterfaceListaPalavras mudarPalavrasDasListas = new UInterfaceListaPalavras();
 			mudarPalavrasDasListas.criarInterfaceListaPalavras();
 		}
 	}

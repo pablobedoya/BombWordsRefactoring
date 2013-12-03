@@ -246,18 +246,18 @@ public class TelaInicial implements ActionListener
 		}
 		else if(arg0.getSource() == this.botaoEditarListas)
 		{
-			InterfaceEditarListasJogo editorListas = new InterfaceEditarListasJogo();
+			UInterfaceEditarListasJogo editorListas = new UInterfaceEditarListasJogo();
 			editorListas.criarInterfaceEditarListasJogo();
 			
 		}
 		else if(arg0.getSource() == this.botaoConfiguracoes)
 		{
-			InterfaceSetarBomba configuracoes = new InterfaceSetarBomba();
+			UInterfaceSetarBomba configuracoes = new UInterfaceSetarBomba();
 			configuracoes.criarInterfaceSetarBomba();
 		}
 		else if(arg0.getSource() == this.definirQualListaSeraUsada)
 		{
-			InterfaceListaPalavras listaPalavras = new InterfaceListaPalavras();
+			UInterfaceListaPalavras listaPalavras = new UInterfaceListaPalavras();
 			listaPalavras.criarInterfaceListaPalavras();
 		}
 		

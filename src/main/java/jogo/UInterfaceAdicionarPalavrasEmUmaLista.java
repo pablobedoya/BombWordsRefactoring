@@ -18,14 +18,14 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import main.java.command.CommandAdicionarPalavraNaLista;
+import main.java.command.InterfaceCommandAdicionarPalavraNaLista;
 import main.java.command.ConcreteCommandAdicionarPalavraNaLista;
 
 
 
 
 
-public class InterfaceAdicionarPalavrasEmUmaLista implements ActionListener, KeyListener
+public class UInterfaceAdicionarPalavrasEmUmaLista implements ActionListener, KeyListener
 {
 	private JFrame janelaEditarLista;
 	private JTextField textFieldPalavra;
@@ -34,16 +34,16 @@ public class InterfaceAdicionarPalavrasEmUmaLista implements ActionListener, Key
 	private JButton botaoDesfazerAdicaoPalavra;
 	private String nomeListaASerEditada;
 	private JLabel labelFeedBackPalavraRegistrada;//label que mostra um feedback se a palavra conseguiu ser registrada
-	private InterfaceListaPalavras mudarPalavrasDasListas;
+	private UInterfaceListaPalavras mudarPalavrasDasListas;
 	
-	private LinkedList<CommandAdicionarPalavraNaLista> comandosAdicionarPalavraNaLista;
+	private LinkedList<InterfaceCommandAdicionarPalavraNaLista> comandosAdicionarPalavraNaLista;
 	
-	public InterfaceAdicionarPalavrasEmUmaLista()
+	public UInterfaceAdicionarPalavrasEmUmaLista()
 	{
-		comandosAdicionarPalavraNaLista = new LinkedList<CommandAdicionarPalavraNaLista>();
+		comandosAdicionarPalavraNaLista = new LinkedList<InterfaceCommandAdicionarPalavraNaLista>();
 	}
 
-	public void criarJanelaEditarLista(String nomeLista, InterfaceListaPalavras interfaceMuda)
+	public void criarJanelaEditarLista(String nomeLista, UInterfaceListaPalavras interfaceMuda)
 	{
 		mudarPalavrasDasListas = interfaceMuda;
 		nomeListaASerEditada = nomeLista;
@@ -238,7 +238,7 @@ public class InterfaceAdicionarPalavrasEmUmaLista implements ActionListener, Key
 	{
 		try
 		{
-			CommandAdicionarPalavraNaLista ultimoComandoAdicaoPalavra = this.comandosAdicionarPalavraNaLista.removeLast();
+			InterfaceCommandAdicionarPalavraNaLista ultimoComandoAdicaoPalavra = this.comandosAdicionarPalavraNaLista.removeLast();
 			ultimoComandoAdicaoPalavra.desfazerAdicionarPalavraNaLista();
 			labelFeedBackPalavraRegistrada.setText("a palavra " + ultimoComandoAdicaoPalavra.getPalavraAdicionar() + " foi retirada com sucesso");
 			
@@ -275,7 +275,7 @@ public class InterfaceAdicionarPalavrasEmUmaLista implements ActionListener, Key
 		}
 		else
 		{
-			CommandAdicionarPalavraNaLista comandoAdicionarPalavra = 
+			InterfaceCommandAdicionarPalavraNaLista comandoAdicionarPalavra = 
 					new ConcreteCommandAdicionarPalavraNaLista(novaPalavra, novaTraducao, listaSemExtensaoTxt[0]);
 	    	this.comandosAdicionarPalavraNaLista.add(comandoAdicionarPalavra);
 			boolean conseguiuAdicionar = comandoAdicionarPalavra.adicionarPalavraNaLista();

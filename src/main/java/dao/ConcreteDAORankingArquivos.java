@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.Reader;
 
-public class ConcreteDAORankingArquivos implements DAORanking
+public class ConcreteDAORankingArquivos implements InterfaceDAORanking
 {
 	@Override
 	public void inserirJogadorRanking(String nomeJogador, int pontuacao) 

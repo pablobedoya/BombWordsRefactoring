@@ -23,13 +23,13 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 
-import main.java.command.CommandRemoverPalavrasDaLista;
+import main.java.command.InterfaceCommandRemoverPalavrasDaLista;
 import main.java.command.ConcreteCommandRemoverPalavrasDaLista;
 import main.java.fachadaparadao.FachadaDAO;
 
 
 
-public class InterfaceListaPalavras implements ActionListener, KeyListener, MouseListener
+public class UInterfaceListaPalavras implements ActionListener, KeyListener, MouseListener
 {
 	private JLabel listaAtual;
 	private JLabel listaUsadaNoJogo;
@@ -45,15 +45,15 @@ public class InterfaceListaPalavras implements ActionListener, KeyListener, Mous
 	private LinkedList<JLabel> labelsPalavrasLista;//conjunto de labels com palavras da lista visualizada.
 	private LinkedList<Boolean> palavrasEstaoSelecionadasNaLista;/*cada booleano dessa lista corresponde a uma palavra da lista visualizada. 
 																	O booleano indica se a palavra foi selecionada pelo usuario.*/
-	private LinkedList<CommandRemoverPalavrasDaLista> comandosRemoverPalavrasDaLista;//para possibilitar refazer
+	private LinkedList<InterfaceCommandRemoverPalavrasDaLista> comandosRemoverPalavrasDaLista;//para possibilitar refazer
 	
-	public InterfaceListaPalavras()
+	public UInterfaceListaPalavras()
 	{
 		janelaLista = new JFrame();
 		janelaLista.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		janelaLista.setTitle("listagem de palavras e traducoes");
 		
-		comandosRemoverPalavrasDaLista = new LinkedList<CommandRemoverPalavrasDaLista>();
+		comandosRemoverPalavrasDaLista = new LinkedList<InterfaceCommandRemoverPalavrasDaLista>();
 		
 	}
 	
@@ -216,7 +216,7 @@ public class InterfaceListaPalavras implements ActionListener, KeyListener, Mous
 		
 		//vamos agora criar um comando para remover as palavras inseridas na lista palavrasRemover.
 		String nomeListaRemoverPalavras = this.listaAtual.getText();
-		CommandRemoverPalavrasDaLista comandoRemoverPalavras = 
+		InterfaceCommandRemoverPalavrasDaLista comandoRemoverPalavras = 
 				new ConcreteCommandRemoverPalavrasDaLista(palavrasRemover, traducoesPalavrasRemover, nomeListaRemoverPalavras);
 		this.comandosRemoverPalavrasDaLista.add(comandoRemoverPalavras);
 		comandoRemoverPalavras.removerPalavrasDaLista();
@@ -230,7 +230,7 @@ public class InterfaceListaPalavras implements ActionListener, KeyListener, Mous
 	{
 		try
 		{
-			CommandRemoverPalavrasDaLista comandoRemoverPalavra = this.comandosRemoverPalavrasDaLista.removeLast();
+			InterfaceCommandRemoverPalavrasDaLista comandoRemoverPalavra = this.comandosRemoverPalavrasDaLista.removeLast();
 			comandoRemoverPalavra.desfazerRemocaoPalavrasDaLista();
 			//por fim, vamos atualizar a lista
 			String listaAtual = this.listaAtual.getText();
@@ -423,7 +423,7 @@ public class InterfaceListaPalavras implements ActionListener, KeyListener, Mous
 		}
 		else if(arg0.getSource() == this.botaojuntarListas)
 		{
-			InterfaceJuntarListas juntaListas = new InterfaceJuntarListas();
+			UInterfaceJuntarListas juntaListas = new UInterfaceJuntarListas();
 			juntaListas.criarInterfaceJuntarListas();
 		}
 		else if(arg0.getSource() == this.caixaSelecionarListas)
@@ -438,7 +438,7 @@ public class InterfaceListaPalavras implements ActionListener, KeyListener, Mous
 		else if(arg0.getSource() == this.botaoInserirPalavrasNaLista)
 		{
 			String nomeLista = this.listaAtual.getText() + ".txt";
-			InterfaceAdicionarPalavrasEmUmaLista adiciona = new InterfaceAdicionarPalavrasEmUmaLista();
+			UInterfaceAdicionarPalavrasEmUmaLista adiciona = new UInterfaceAdicionarPalavrasEmUmaLista();
 			adiciona.criarJanelaEditarLista(nomeLista, this);
 		}
 		else if(arg0.getSource() == this.botaoDesfazerRemocaoPalavrasDaLista)
@@ -523,7 +523,7 @@ public class InterfaceListaPalavras implements ActionListener, KeyListener, Mous
     		}
     		else if(botaojuntarListas.isFocusOwner() == true)
     		{
-    			InterfaceJuntarListas juntaListas = new InterfaceJuntarListas();
+    			UInterfaceJuntarListas juntaListas = new UInterfaceJuntarListas();
     			juntaListas.criarInterfaceJuntarListas();
     		}
     		else if(botaoRemoverPalavrasSelecionadas.isFocusOwner() == true)
@@ -533,7 +533,7 @@ public class InterfaceListaPalavras implements ActionListener, KeyListener, Mous
     		else if(botaoInserirPalavrasNaLista.isFocusOwner() == true)
     		{
     			String nomeLista = this.listaAtual.getText() + ".txt";
-    			InterfaceAdicionarPalavrasEmUmaLista adiciona = new InterfaceAdicionarPalavrasEmUmaLista();
+    			UInterfaceAdicionarPalavrasEmUmaLista adiciona = new UInterfaceAdicionarPalavrasEmUmaLista();
     			adiciona.criarJanelaEditarLista(nomeLista, this);
     		}
     		else if(botaoDesfazerRemocaoPalavrasDaLista.isFocusOwner() == true)

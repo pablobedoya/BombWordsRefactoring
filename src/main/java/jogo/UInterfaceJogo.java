@@ -24,14 +24,14 @@ import javax.swing.border.TitledBorder;
 import main.java.fachadaparadao.FachadaDAO;
 
 
-public class InterfaceJogo implements KeyListener
+public class UInterfaceJogo implements KeyListener
 {
-	private static InterfaceJogo singletonInterfaceJogo;
+	private static UInterfaceJogo singletonInterfaceJogo;
 	private JTextField campoPreencher;
 	private JFrame telaJogo;
 	private JLabel [] coracoesJogador;
 	private  JLabel pontuacao;
-	private InterfaceBomba [] imagensBombas;
+	private UInterfaceBomba [] imagensBombas;
 	private String modoJogo;
 	private int numPalavrasNoJogo;
 	private PalavrasETraducoes palavrasETraducoesDoJogo;
@@ -41,10 +41,10 @@ public class InterfaceJogo implements KeyListener
 	private volatile boolean jogoAcabou; //booleano alterado quando jframe � disposed()
 	
 	
-	private  InterfaceJogo()
+	private  UInterfaceJogo()
 	{
 		modoJogo = "nenhum";
-		imagensBombas = new InterfaceBomba[20];
+		imagensBombas = new UInterfaceBomba[20];
 		String nomeListaTemPalavrasASeremUsadasNoJogo = FachadaDAO.getFachadaDAO().pegarNomeListaASerUsadaNoJogo();
 		this.palavrasETraducoesDoJogo = FachadaDAO.getFachadaDAO().extrairPalavrasETraducoes(nomeListaTemPalavrasASeremUsadasNoJogo);
 		numPalavrasNoJogo = this.palavrasETraducoesDoJogo.getNumPalavrasNoJogo();
@@ -68,11 +68,11 @@ public class InterfaceJogo implements KeyListener
 	
 	
 	
-	public static synchronized InterfaceJogo getInterfaceJogo()
+	public static synchronized UInterfaceJogo getInterfaceJogo()
 	{
 		if(singletonInterfaceJogo == null)
 		{
-			singletonInterfaceJogo = new InterfaceJogo();
+			singletonInterfaceJogo = new UInterfaceJogo();
 		}
 		return singletonInterfaceJogo;
 	}
@@ -98,7 +98,7 @@ public class InterfaceJogo implements KeyListener
 		return modoJogo;
 	}
 	
-	public synchronized InterfaceBomba getBomba(int numeroBomba)
+	public synchronized UInterfaceBomba getBomba(int numeroBomba)
 	{
 		return imagensBombas[numeroBomba];
 	}
@@ -204,7 +204,7 @@ public class InterfaceJogo implements KeyListener
 			int numeroAleatorio = geraAleatorio.nextInt(numPalavrasNoJogo);
 			String palavraBomba = this.palavrasETraducoesDoJogo.getPalavra(numeroAleatorio);
 			String traducaoBomba = this.palavrasETraducoesDoJogo.getTraducao(numeroAleatorio);
-			InterfaceBomba bomba = new InterfaceBomba(palavraBomba, traducaoBomba);
+			UInterfaceBomba bomba = new UInterfaceBomba(palavraBomba, traducaoBomba);
 			this.imagensBombas[i] = bomba;
 			campoBombas.add(bomba.getUneBombaEPalavra());
 		}
@@ -287,7 +287,7 @@ public class InterfaceJogo implements KeyListener
             if(digitadaPeloUsuario != null)
             {
             	ChecaSeJogadorAcertouTraducao checaPalpiteJogador = new ChecaSeJogadorAcertouTraducao(imagensBombas);
-            	 LinkedList<InterfaceBomba> bombasDesativar = 
+            	 LinkedList<UInterfaceBomba> bombasDesativar = 
             			 checaPalpiteJogador.quaisBombasDevemSerDesativadas(digitadaPeloUsuario);
                  if(bombasDesativar != null)
                  {
@@ -377,7 +377,7 @@ public class InterfaceJogo implements KeyListener
 		return painelComPalavrasNaoAcertadas;
 	}
 	
-	public synchronized void inserirPalavraETraducaoDaBombaQueExplodiu(InterfaceBomba interBomba)
+	public synchronized void inserirPalavraETraducaoDaBombaQueExplodiu(UInterfaceBomba interBomba)
 	{
 		this.labelsPalavrasNaoAcertadas[quantasBombasJaExplodiram].setText("Palavra : " + interBomba.getPalavra());
 		this.labelsTraducoesPalavrasNaoAcertadas[quantasBombasJaExplodiram].setText("Traducao : " + interBomba.getTraducao());

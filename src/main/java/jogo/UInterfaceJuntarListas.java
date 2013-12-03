@@ -19,14 +19,14 @@ import javax.swing.JTextField;
 import main.java.fachadaparadao.FachadaDAO;
 
 
-public class InterfaceJuntarListas implements ActionListener, KeyListener
+public class UInterfaceJuntarListas implements ActionListener, KeyListener
 {
 	private JFrame telaJuntarListas;
 	private JTextField textFieldLista1;
 	private JTextField textFieldLista2;
 	private JButton juntarListas;
 	
-	public InterfaceJuntarListas()
+	public UInterfaceJuntarListas()
 	{
 		telaJuntarListas = new JFrame("juntar listas de palavras");
 		telaJuntarListas.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);

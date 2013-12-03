@@ -9,7 +9,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 
-public class InterfaceBomba 
+public class UInterfaceBomba 
 {
 	private String palavra;
 	private String traducao;
@@ -19,7 +19,7 @@ public class InterfaceBomba
 	private boolean ativada;
 	
 	@SuppressWarnings("static-access")
-	public InterfaceBomba(String palav, String tradu)
+	public UInterfaceBomba(String palav, String tradu)
 	{
 		ativada = false;
 		palavra = palav;

@@ -8,15 +8,15 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import main.java.jogo.InterfaceRanking;
+import main.java.jogo.UInterfaceRanking;
 
 public class TestInterfaceRanking {
 
-	InterfaceRanking interfaceRanking;
+	UInterfaceRanking interfaceRanking;
 
 	@Before
 	public void setUp() throws Exception {
-		interfaceRanking = new InterfaceRanking();
+		interfaceRanking = new UInterfaceRanking();
 	}
 
 	@Test

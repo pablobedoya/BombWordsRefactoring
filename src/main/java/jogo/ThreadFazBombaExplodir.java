@@ -9,19 +9,19 @@ import javax.swing.JLabel;
 public class ThreadFazBombaExplodir extends Thread
 {
 	int contadorBomba;
-	InterfaceBomba bomba;
-	InterfaceJogo interfaceJogo;
+	UInterfaceBomba bomba;
+	UInterfaceJogo interfaceJogo;
 	PalavrasETraducoes palavrasETraducoesDoJogo;
 	private int quantasPalavrasNoJogo;
-	LinkedList<InterfaceBomba> bombasExplodidasPeloJogador; 
+	LinkedList<UInterfaceBomba> bombasExplodidasPeloJogador; 
 	//lista de bombas que o jogador j� conseguiu explodir(ele não acertou a traducão a tempo)
 	
-	public ThreadFazBombaExplodir(InterfaceBomba bomb, int quantasPalavrasJogo,
-			PalavrasETraducoes palavrasETraducoes, int tempoAteBombaExplodir, LinkedList<InterfaceBomba> bombasExplodidas)
+	public ThreadFazBombaExplodir(UInterfaceBomba bomb, int quantasPalavrasJogo,
+			PalavrasETraducoes palavrasETraducoes, int tempoAteBombaExplodir, LinkedList<UInterfaceBomba> bombasExplodidas)
 	{
 		bomba = bomb;
 		contadorBomba = tempoAteBombaExplodir;
-		interfaceJogo = InterfaceJogo.getInterfaceJogo();
+		interfaceJogo = UInterfaceJogo.getInterfaceJogo();
 		quantasPalavrasNoJogo = quantasPalavrasJogo;
 		palavrasETraducoesDoJogo = palavrasETraducoes;
 		bombasExplodidasPeloJogador = bombasExplodidas;
@@ -105,7 +105,7 @@ public class ThreadFazBombaExplodir extends Thread
 	{
 		String nomeExplodida = this.bomba.getPalavra();
 		String traducaoExplodida = this.bomba.getTraducao();
-		InterfaceBomba bombaExplodida = new InterfaceBomba(nomeExplodida, traducaoExplodida);
+		UInterfaceBomba bombaExplodida = new UInterfaceBomba(nomeExplodida, traducaoExplodida);
 		interfaceJogo.inserirPalavraETraducaoDaBombaQueExplodiu(bombaExplodida);
 		this.bombasExplodidasPeloJogador.add(bombaExplodida);
 	}
