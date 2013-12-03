@@ -38,7 +38,7 @@ public class TestInterfaceAdicionarPalavrasEmUmaLista {
 
 		fixture.criarJanelaEditarLista(nomeLista, interfaceMuda);
 	}
-
+/*
 	@Test
 	public void testDesfazerAdicaoPalavraNaLista() throws Exception {
 		UInterfaceAdicionarPalavrasEmUmaLista fixture = new UInterfaceAdicionarPalavrasEmUmaLista();
@@ -68,5 +68,5 @@ public class TestInterfaceAdicionarPalavrasEmUmaLista {
 	public void testAdicionar(){
 		
 	}
-
+*/
 }
