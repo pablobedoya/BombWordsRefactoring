@@ -30,51 +30,39 @@ public class TestInterfaceAdicionarPalavrasEmUmaLista {
 	}
 
 	@Test
-	public void testCriarJanelaEditarLista_1()
-		throws Exception {
+	public void testCriarJanelaEditarLista() throws Exception {
 		UInterfaceAdicionarPalavrasEmUmaLista fixture = new UInterfaceAdicionarPalavrasEmUmaLista();
 		fixture.criarJanelaEditarLista("", new UInterfaceListaPalavras());
 		String nomeLista = "";
 		UInterfaceListaPalavras interfaceMuda = new UInterfaceListaPalavras();
 
 		fixture.criarJanelaEditarLista(nomeLista, interfaceMuda);
-
-		// add additional test code here
 	}
 
 	@Test
-	public void testDesfazerAdicaoPalavraNaLista_1()
-		throws Exception {
+	public void testDesfazerAdicaoPalavraNaLista() throws Exception {
 		UInterfaceAdicionarPalavrasEmUmaLista fixture = new UInterfaceAdicionarPalavrasEmUmaLista();
 		fixture.criarJanelaEditarLista("", new UInterfaceListaPalavras());
 
 		fixture.desfazerAdicaoPalavraNaLista();
-
-		// add additional test code here
 	}
 
 	@Test
-	public void testKeyPressed_1()
-		throws Exception {
+	public void testKeyPressed() throws Exception {
 		UInterfaceAdicionarPalavrasEmUmaLista fixture = new UInterfaceAdicionarPalavrasEmUmaLista();
 		fixture.criarJanelaEditarLista("", new UInterfaceListaPalavras());
 		KeyEvent e = new KeyEvent(Box.createGlue(), 1, 1L, 1, 1);
 
 		fixture.keyPressed(e);
-
-		// add additional test code here
 	}
 
 	@Test
-	public void testKeyReleased_1()
-		throws Exception {
+	public void testKeyReleased() throws Exception {
 		UInterfaceAdicionarPalavrasEmUmaLista fixture = new UInterfaceAdicionarPalavrasEmUmaLista();
 		fixture.criarJanelaEditarLista("", new UInterfaceListaPalavras());
 		KeyEvent arg0 = new KeyEvent(Box.createGlue(), 1, 1L, 1, 1);
 
 		fixture.keyReleased(arg0);
-
-		// add additional test code here
 	}
 	@Test
 	public void testAdicionar(){
