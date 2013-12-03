@@ -52,7 +52,8 @@ public class TestFachadaDAO {
 	@Test
 	public void testLimparListaPalavras() {
 		FachadaDAO fixture = FachadaDAO.getFachadaDAO();
-		String nomeLista = "listaasasblabla";
+		Random r = new Random();
+		String nomeLista = "novaLista" + r.nextInt(100);
 
 		boolean result = fixture.criarNovaListaPalavras(nomeLista);
 		assertFalse(result);
