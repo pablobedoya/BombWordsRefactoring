@@ -91,7 +91,7 @@ public class TestInterfaceBomba {
 		assertEquals(false, result.isFocusCycleRoot());
 		assertEquals(false, result.isFocusTraversalPolicyProvider());
 		assertEquals(false, result.isFocusTraversalPolicySet());
-		assertEquals("javax.swing.JLabel[,0,0,0x0,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=8388608,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,horizontalAlignment=CENTER,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=,verticalAlignment=CENTER,verticalTextPosition=CENTER]", result.toString());
+		assertEquals("javax.swing.JLabel[,0,0,0x0,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=8388608,maximumSize=,minimumSize=,preferredSize=,defaultIcon=uma bomba oculta,disabledIcon=,horizontalAlignment=CENTER,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=,verticalAlignment=CENTER,verticalTextPosition=CENTER]", result.toString());
 		
 		assertEquals(false, result.isValid());
 		assertEquals(null, result.getName());

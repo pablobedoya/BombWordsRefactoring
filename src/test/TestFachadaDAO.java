@@ -52,7 +52,7 @@ public class TestFachadaDAO {
 	@Test
 	public void testLimparListaPalavras() {
 		FachadaDAO fixture = FachadaDAO.getFachadaDAO();
-		String nomeLista = "lista44";
+		String nomeLista = "listaasasblabla";
 
 		boolean result = fixture.criarNovaListaPalavras(nomeLista);
 		assertTrue(result);
@@ -85,7 +85,7 @@ public class TestFachadaDAO {
 	@Test
 	public void testExtrairPalavrasETraducoes() {
 		FachadaDAO fachada = FachadaDAO.getFachadaDAO();
-		String listaOndeEstaoOsDados = "";
+		String listaOndeEstaoOsDados = "sasasasasasa";
 		PalavrasETraducoes palavrasETraducoes = fachada.extrairPalavrasETraducoes(listaOndeEstaoOsDados);
 
 		assertNull(palavrasETraducoes);
