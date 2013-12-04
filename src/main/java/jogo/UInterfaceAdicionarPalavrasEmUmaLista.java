@@ -311,4 +311,12 @@ public class UInterfaceAdicionarPalavrasEmUmaLista implements ActionListener, Ke
 		
 		return false;
 	}
+	
+	public JButton getSalvar() {
+		return salvar;
+	}
+	
+	public JButton getBotaoDesfazerAdicaoPalavra() {
+		return botaoDesfazerAdicaoPalavra;
+	}
 }
