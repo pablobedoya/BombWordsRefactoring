@@ -26,8 +26,6 @@
 								<exclude>**/Test*.java</exclude>
 								<exclude>**/Interface*.class</exclude>
 								<exclude>**/Interface*.java</exclude>
-								<exclude>**/Main*.class</exclude>
-								<exclude>**/Main*.java</exclude>
 							</excludes>
 						</instrumentation>
 					</configuration>
@@ -47,8 +45,6 @@
 								<exclude>**/Test*.java</exclude>
 								<exclude>**/Interface*.class</exclude>
 								<exclude>**/Interface*.java</exclude>
-								<exclude>**/Main*.class</exclude>
-								<exclude>**/Main*.java</exclude>
 							</excludes>
 						</instrumentation>
 					</configuration>
@@ -83,8 +79,6 @@
 						<exclude>**/Test*.java</exclude>
 						<exclude>**/Interface*.class</exclude>
 						<exclude>**/Interface*.java</exclude>
-						<exclude>**/Main*.class</exclude>
-						<exclude>**/Main*.java</exclude>
 					</excludes>
 				</configuration>
 			</plugin>
