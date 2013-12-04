@@ -42,6 +42,7 @@ public class TestInterfaceJogo {
 		assertEquals(0, InterfaceJogo.getInterfaceJogo().getNumPalavrasNoJogo());
 	}
 */
+	
 	@Test(expected = NullPointerException.class)
 	public void testCriarCampoBombas() throws Exception {
 		UInterfaceJogo fixture = UInterfaceJogo.getInterfaceJogo();

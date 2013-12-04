@@ -47,7 +47,7 @@ public class UInterfaceJogo implements KeyListener
 		imagensBombas = new UInterfaceBomba[20];
 		String nomeListaTemPalavrasASeremUsadasNoJogo = FachadaDAO.getFachadaDAO().pegarNomeListaASerUsadaNoJogo();
 		this.palavrasETraducoesDoJogo = FachadaDAO.getFachadaDAO().extrairPalavrasETraducoes(nomeListaTemPalavrasASeremUsadasNoJogo);
-		numPalavrasNoJogo = 10; // Retirado Temporario para verificar testes ---- palavrasETraducoesDoJogo.getNumPalavrasNoJogo();
+		numPalavrasNoJogo = 10; // Retirado temporario para verificar testes ---- palavrasETraducoesDoJogo.getNumPalavrasNoJogo();
 		
 		labelsPalavrasNaoAcertadas = new JLabel[5];
 		labelsTraducoesPalavrasNaoAcertadas = new JLabel[5];
