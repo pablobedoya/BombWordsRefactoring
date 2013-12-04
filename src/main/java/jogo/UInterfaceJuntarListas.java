@@ -214,4 +214,8 @@ public class UInterfaceJuntarListas implements ActionListener, KeyListener
 		// TODO Auto-generated method stub
 		
 	}
+	
+	public JButton getJuntarListas() {
+		return juntarListas;
+	}
 }

@@ -298,6 +298,20 @@ public class UInterfaceEditarListasJogo implements ActionListener
 		}
 	}
 	
-
+	public JButton getCriarNovaLista() {
+		return criarNovaLista;
+	}
+	
+	public JButton getEditarPalavrasDasListas() {
+		return editarPalavrasDasListas;
+	}
+	
+	public JButton getLimparLista() {
+		return limparLista;
+	}
+	
+	public JButton getRemoverLista() {
+		return removerLista;
+	}
 	
 }

@@ -2,9 +2,14 @@ package test;
 
 import static org.junit.Assert.*;
 
+import java.awt.AWTException;
+import java.awt.Point;
+import java.awt.Robot;
+import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 
 import javax.swing.Box;
+import javax.swing.JButton;
 import javax.swing.JPanel;
 
 import main.java.fachadaparadao.FachadaDAO;
@@ -12,6 +17,7 @@ import main.java.jogo.UInterfaceBomba;
 import main.java.jogo.UInterfaceJogo;
 import main.java.jogo.Jogador;
 import main.java.jogo.PalavrasETraducoes;
+import main.java.jogo.UInterfaceListaPalavras;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -46,8 +52,8 @@ public class TestInterfaceJogo {
 	@Test(expected = NullPointerException.class)
 	public void testCriarCampoBombas() throws Exception {
 		UInterfaceJogo fixture = UInterfaceJogo.getInterfaceJogo();
-		JPanel result = UInterfaceJogo.getInterfaceJogo().criarCampoBombas();
-		assertNull(result);
+		JPanel result = fixture.criarCampoBombas();
+		assertNotNull(result);
 	}
 
 	@Test
@@ -88,6 +94,7 @@ public class TestInterfaceJogo {
 	@Test(expected = NullPointerException.class)
 	public void testDisposeTelaJogo() throws Exception {
 		UInterfaceJogo fixture = UInterfaceJogo.getInterfaceJogo();
+		fixture.criarInterfaceJogo();
 		fixture.disposeTelaJogo();
 		assertNotNull(fixture);
 	}
@@ -109,7 +116,7 @@ public class TestInterfaceJogo {
 	public void testGetJogoAcabou(){
 		UInterfaceJogo fixture = UInterfaceJogo.getInterfaceJogo();
 		boolean result = fixture.getJogoAcabou();
-		assertTrue(result);
+		assertFalse(result);
 	}
 
 	@Test
@@ -152,9 +159,27 @@ public class TestInterfaceJogo {
 	@Test
 	public void testKeyPressed(){
 		UInterfaceJogo fixture = UInterfaceJogo.getInterfaceJogo();
-		KeyEvent e = new KeyEvent(Box.createGlue(), 1, 1L, 1, 1);
-		fixture.keyPressed(e);
-		assertNotNull(fixture);
+		KeyEvent arg0 = new KeyEvent(Box.createGlue(), 1, 1L, 1, 1);
+		
+		try {
+			Thread.sleep(1000);
+		} catch (Exception e) {
+		}
+		Robot r;
+		try {
+
+			r = new Robot();
+			fixture.criarCampoDigitarPalavras();
+			fixture.keyPressed(arg0);
+			r.keyPress(KeyEvent.VK_ENTER);
+			
+			r.delay(1000);
+			r.keyRelease(KeyEvent.VK_ENTER);
+			r.delay(1000);
+		} catch (AWTException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	@Test
