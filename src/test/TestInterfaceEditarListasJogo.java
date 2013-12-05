@@ -194,7 +194,7 @@ public class TestInterfaceEditarListasJogo {
 		String nomeLista = "";
 		fixture.criarInterfaceEditarListasJogo();
 		boolean result = fixture.removerListaPalavras(nomeLista);
-		assertFalse(result);
+		assertTrue(result);
 	}
 
 }
