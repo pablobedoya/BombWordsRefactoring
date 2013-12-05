@@ -12,11 +12,13 @@ public class TestJuntaListasDePalavras {
 	
 	@Before
 	public void setUp() throws Exception {
+		junta = new JuntaListasDePalavras();
 	}
 
 	@Test
 	public void testJuntarListas() {
-		assertNull("Sucesso", junta);
+		junta.juntarListas("avancado", "basico");
+		assertNotNull("Sucesso", junta);
 	}
 
 }
